@@ -1,0 +1,21 @@
+#SAY.DialogText.1.
+Dialog 01
+
+#SAY.DialogText.2.
+Dialog 02
+
+#SAY.DialogText.3.
+Dialog 03
+
+#SAY.DialogText.4.
+Dialog 04
+
+#SAY.DialogText.5.
+Dialog 05
+
+#MENU.DialogText.6
+Opção 1
+
+#SAY.DialogText.8.
+Yay! bloco dois
+

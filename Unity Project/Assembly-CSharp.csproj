@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <RootNamespace></RootNamespace>
+    <ProjectGuid>{BDBCE7D3-139D-3EDB-816D-FB1D73476D25}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <AssemblyName>Assembly-CSharp</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <BaseDirectory>Assets</BaseDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Temp\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_4_0;UNITY_5_4;UNITY_5;ENABLE_NEW_BUGREPORTER;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_DUCK_TYPING;ENABLE_EDITOR_RETINA;ENABLE_RETINA_GUISTYLES;ENABLE_FRAME_DEBUGGER;ENABLE_GENERICS;ENABLE_HOME_SCREEN;ENABLE_IMAGEEFFECTS;ENABLE_LIGHT_PROBES_LEGACY;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_PLUGIN_INSPECTOR;ENABLE_SHADOWS;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_SPRITE_POLYGON;ENABLE_TERRAIN;ENABLE_RAKNET;ENABLE_UNET;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;INCLUDE_DYNAMIC_GI;INCLUDE_GI;INCLUDE_IL2CPP;INCLUDE_DIRECTX12;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;INCLUDE_PUBNUB;ENABLE_LOCALIZATION;ENABLE_ANDROID_ATLAS_ETC1_COMPRESSION;ENABLE_EDITOR_TESTS_RUNNER;UNITY_STANDALONE_WIN;UNITY_STANDALONE;ENABLE_SUBSTANCE;ENABLE_TEXTUREID_MAP;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITYWEBREQUEST;ENABLE_EVENT_QUEUE;ENABLE_CLUSTERINPUT;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;ENABLE_PROFILER;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;UNITY_TEAM_LICENSE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Temp\bin\Release\</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.XML" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="UnityEngine">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+     <Compile Include="Assets\Fungus\Animation\Scripts\Commands\PlayAnimState.cs" />
+     <Compile Include="Assets\Fungus\Animation\Scripts\Commands\ResetAnimTrigger.cs" />
+     <Compile Include="Assets\Fungus\Animation\Scripts\Commands\SetAnimBool.cs" />
+     <Compile Include="Assets\Fungus\Animation\Scripts\Commands\SetAnimFloat.cs" />
+     <Compile Include="Assets\Fungus\Animation\Scripts\Commands\SetAnimInteger.cs" />
+     <Compile Include="Assets\Fungus\Animation\Scripts\Commands\SetAnimTrigger.cs" />
+     <Compile Include="Assets\Fungus\Audio\Scripts\Commands\ControlAudio.cs" />
+     <Compile Include="Assets\Fungus\Audio\Scripts\Commands\PlayMusic.cs" />
+     <Compile Include="Assets\Fungus\Audio\Scripts\Commands\PlaySound.cs" />
+     <Compile Include="Assets\Fungus\Audio\Scripts\Commands\PlayUsfxrSound.cs" />
+     <Compile Include="Assets\Fungus\Audio\Scripts\Commands\SetAudioPitch.cs" />
+     <Compile Include="Assets\Fungus\Audio\Scripts\Commands\SetAudioVolume.cs" />
+     <Compile Include="Assets\Fungus\Audio\Scripts\Commands\StopMusic.cs" />
+     <Compile Include="Assets\Fungus\Audio\Scripts\MusicController.cs" />
+     <Compile Include="Assets\Fungus\Camera\Scripts\CameraController.cs" />
+     <Compile Include="Assets\Fungus\Camera\Scripts\Commands\FadeScreen.cs" />
+     <Compile Include="Assets\Fungus\Camera\Scripts\Commands\FadeToView.cs" />
+     <Compile Include="Assets\Fungus\Camera\Scripts\Commands\Fullscreen.cs" />
+     <Compile Include="Assets\Fungus\Camera\Scripts\Commands\MoveToView.cs" />
+     <Compile Include="Assets\Fungus\Camera\Scripts\Commands\ShakeCamera.cs" />
+     <Compile Include="Assets\Fungus\Camera\Scripts\Commands\StartSwipe.cs" />
+     <Compile Include="Assets\Fungus\Camera\Scripts\Commands\StopSwipe.cs" />
+     <Compile Include="Assets\Fungus\Camera\Scripts\View.cs" />
+     <Compile Include="Assets\Fungus\Flowchart\Scripts\Block.cs" />
+     <Compile Include="Assets\Fungus\Flowchart\Scripts\Command.cs" />
+     <Compile Include="Assets\Fungus\Flowchart\Scripts\CommandCopyBuffer.cs" />
+     <Compile Include="Assets\Fungus\Flowchart\Scripts\Commands\Break.cs" />
+     <Compile Include="Assets\Fungus\Flowchart\Scripts\Commands\Call.cs" />
+     <Compile Include="Assets\Fungus\Flowchart\Scripts\Commands\CallMethod.cs" />
+     <Compile Include="Assets\Fungus\Flowchart\Scripts\Commands\Comment.cs" />
+     <Compile Include="Assets\Fungus\Flowchart\Scripts\Commands\Condition.cs" />
+     <Compile Include="Assets\Fungus\Flowchart\Scripts\Commands\DebugLog.cs" />
+     <Compile Include="Assets\Fungus\Flowchart\Scripts\Commands\DeleteSaveKey.cs" />
+     <Compile Include="Assets\Fungus\Flowchart\Scripts\Commands\Destroy.cs" />
+     <Compile Include="Assets\Fungus\Flowchart\Scripts\Commands\Else.cs" />
+     <Compile Include="Assets\Fungus\Flowchart\Scripts\Commands\ElseIf.cs" />
+     <Compile Include="Assets\Fungus\Flowchart\Scripts\Commands\End.cs" />
+     <Compile Include="Assets\Fungus\Flowchart\Scripts\Commands\If.cs" />
+     <Compile Include="Assets\Fungus\Flowchart\Scripts\Commands\InvokeEvent.cs" />
+     <Compile Include="Assets\Fungus\Flowchart\Scripts\Commands\InvokeMethod.cs" />
+     <Compile Include="Assets\Fungus\Flowchart\Scripts\Commands\Jump.cs" />
+     <Compile Include="Assets\Fungus\Flowchart\Scripts\Commands\Label.cs" />
+     <Compile Include="Assets\Fungus\Flowchart\Scripts\Commands\LoadScene.cs" />
+     <Compile Include="Assets\Fungus\Flowchart\Scripts\Commands\LoadVariable.cs" />
+     <Compile Include="Assets\Fungus\Flowchart\Scripts\Commands\OpenURL.cs" />
+     <Compile Include="Assets\Fungus\Flowchart\Scripts\Commands\Quit.cs" />
+     <Compile Include="Assets\Fungus\Flowchart\Scripts\Commands\RandomFloat.cs" />
+     <Compile Include="Assets\Fungus\Flowchart\Scripts\Commands\RandomInteger.cs" />
+     <Compile Include="Assets\Fungus\Flowchart\Scripts\Commands\ReadTextFile.cs" />
+     <Compile Include="Assets\Fungus\Flowchart\Scripts\Commands\Reset.cs" />
+     <Compile Include="Assets\Fungus\Flowchart\Scripts\Commands\SaveVariable.cs" />
+     <Compile Include="Assets\Fungus\Flowchart\Scripts\Commands\SendMessage.cs" />
+     <Compile Include="Assets\Fungus\Flowchart\Scripts\Commands\SetActive.cs" />
+     <Compile Include="Assets\Fungus\Flowchart\Scripts\Commands\SetSaveProfile.cs" />
+     <Compile Include="Assets\Fungus\Flowchart\Scripts\Commands\SetVariable.cs" />
+     <Compile Include="Assets\Fungus\Flowchart\Scripts\Commands\SpawnObject.cs" />
+     <Compile Include="Assets\Fungus\Flowchart\Scripts\Commands\Stop.cs" />
+     <Compile Include="Assets\Fungus\Flowchart\Scripts\Commands\StopBlock.cs" />
+     <Compile Include="Assets\Fungus\Flowchart\Scripts\Commands\StopFlowchart.cs" />
+     <Compile Include="Assets\Fungus\Flowchart\Scripts\Commands\Wait.cs" />
+     <Compile Include="Assets\Fungus\Flowchart\Scripts\Commands\While.cs" />
+     <Compile Include="Assets\Fungus\Flowchart\Scripts\EventHandler.cs" />
+     <Compile Include="Assets\Fungus\Flowchart\Scripts\EventHandlers\FlowchartEnabled.cs" />
+     <Compile Include="Assets\Fungus\Flowchart\Scripts\EventHandlers\GameStarted.cs" />
+     <Compile Include="Assets\Fungus\Flowchart\Scripts\EventHandlers\KeyPressed.cs" />
+     <Compile Include="Assets\Fungus\Flowchart\Scripts\EventHandlers\MessageReceived.cs" />
+     <Compile Include="Assets\Fungus\Flowchart\Scripts\Flowchart.cs" />
+     <Compile Include="Assets\Fungus\Flowchart\Scripts\FungusState.cs" />
+     <Compile Include="Assets\Fungus\Flowchart\Scripts\Node.cs" />
+     <Compile Include="Assets\Fungus\Flowchart\Scripts\SceneLoader.cs" />
+     <Compile Include="Assets\Fungus\Flowchart\Scripts\StringFormatter.cs" />
+     <Compile Include="Assets\Fungus\Flowchart\Scripts\Variable.cs" />
+     <Compile Include="Assets\Fungus\Flowchart\Scripts\VariableTypes\AnimatorVariable.cs" />
+     <Compile Include="Assets\Fungus\Flowchart\Scripts\VariableTypes\AudioSourceVariable.cs" />
+     <Compile Include="Assets\Fungus\Flowchart\Scripts\VariableTypes\BooleanVariable.cs" />
+     <Compile Include="Assets\Fungus\Flowchart\Scripts\VariableTypes\ColorVariable.cs" />
+     <Compile Include="Assets\Fungus\Flowchart\Scripts\VariableTypes\FloatVariable.cs" />
+     <Compile Include="Assets\Fungus\Flowchart\Scripts\VariableTypes\GameObjectVariable.cs" />
+     <Compile Include="Assets\Fungus\Flowchart\Scripts\VariableTypes\IntegerVariable.cs" />
+     <Compile Include="Assets\Fungus\Flowchart\Scripts\VariableTypes\MaterialVariable.cs" />
+     <Compile Include="Assets\Fungus\Flowchart\Scripts\VariableTypes\ObjectVariable.cs" />
+     <Compile Include="Assets\Fungus\Flowchart\Scripts\VariableTypes\SpriteVariable.cs" />
+     <Compile Include="Assets\Fungus\Flowchart\Scripts\VariableTypes\StringVariable.cs" />
+     <Compile Include="Assets\Fungus\Flowchart\Scripts\VariableTypes\TextureVariable.cs" />
+     <Compile Include="Assets\Fungus\Flowchart\Scripts\VariableTypes\TransformVariable.cs" />
+     <Compile Include="Assets\Fungus\Flowchart\Scripts\VariableTypes\Vector2Variable.cs" />
+     <Compile Include="Assets\Fungus\Flowchart\Scripts\VariableTypes\Vector3Variable.cs" />
+     <Compile Include="Assets\Fungus\Lua\Scripts\Commands\ExecuteLua.cs" />
+     <Compile Include="Assets\Fungus\Lua\Scripts\LuaExtensions.cs" />
+     <Compile Include="Assets\Fungus\Narrative\Scripts\Character.cs" />
+     <Compile Include="Assets\Fungus\Narrative\Scripts\Commands\ClearMenu.cs" />
+     <Compile Include="Assets\Fungus\Narrative\Scripts\Commands\ControlStage.cs" />
+     <Compile Include="Assets\Fungus\Narrative\Scripts\Commands\ControlWithDisplay.cs" />
+     <Compile Include="Assets\Fungus\Narrative\Scripts\Commands\Conversation.cs" />
+     <Compile Include="Assets\Fungus\Narrative\Scripts\Commands\Menu.cs" />
+     <Compile Include="Assets\Fungus\Narrative\Scripts\Commands\MenuTimer.cs" />
+     <Compile Include="Assets\Fungus\Narrative\Scripts\Commands\Portrait.cs" />
+     <Compile Include="Assets\Fungus\Narrative\Scripts\Commands\Say.cs" />
+     <Compile Include="Assets\Fungus\Narrative\Scripts\Commands\SetLanguage.cs" />
+     <Compile Include="Assets\Fungus\Narrative\Scripts\Commands\SetMenuDialog.cs" />
+     <Compile Include="Assets\Fungus\Narrative\Scripts\Commands\SetSayDialog.cs" />
+     <Compile Include="Assets\Fungus\Narrative\Scripts\ConversationManager.cs" />
+     <Compile Include="Assets\Fungus\Narrative\Scripts\CustomTag.cs" />
+     <Compile Include="Assets\Fungus\Narrative\Scripts\DialogInput.cs" />
+     <Compile Include="Assets\Fungus\Narrative\Scripts\Localization.cs" />
+     <Compile Include="Assets\Fungus\Narrative\Scripts\MenuDialog.cs" />
+     <Compile Include="Assets\Fungus\Narrative\Scripts\PortraitController.cs" />
+     <Compile Include="Assets\Fungus\Narrative\Scripts\SayDialog.cs" />
+     <Compile Include="Assets\Fungus\Narrative\Scripts\Stage.cs" />
+     <Compile Include="Assets\Fungus\Sprite\Scripts\Clickable2D.cs" />
+     <Compile Include="Assets\Fungus\Sprite\Scripts\Commands\FadeSprite.cs" />
+     <Compile Include="Assets\Fungus\Sprite\Scripts\Commands\SetClickable2D.cs" />
+     <Compile Include="Assets\Fungus\Sprite\Scripts\Commands\SetCollider.cs" />
+     <Compile Include="Assets\Fungus\Sprite\Scripts\Commands\SetDraggable2D.cs" />
+     <Compile Include="Assets\Fungus\Sprite\Scripts\Commands\SetLayerOrder.cs" />
+     <Compile Include="Assets\Fungus\Sprite\Scripts\Commands\SetMouseCursor.cs" />
+     <Compile Include="Assets\Fungus\Sprite\Scripts\Commands\SetSpriteOrder.cs" />
+     <Compile Include="Assets\Fungus\Sprite\Scripts\Commands\ShowSprite.cs" />
+     <Compile Include="Assets\Fungus\Sprite\Scripts\Draggable2D.cs" />
+     <Compile Include="Assets\Fungus\Sprite\Scripts\EventHandlers\DragCancelled.cs" />
+     <Compile Include="Assets\Fungus\Sprite\Scripts\EventHandlers\DragCompleted.cs" />
+     <Compile Include="Assets\Fungus\Sprite\Scripts\EventHandlers\DragEntered.cs" />
+     <Compile Include="Assets\Fungus\Sprite\Scripts\EventHandlers\DragExited.cs" />
+     <Compile Include="Assets\Fungus\Sprite\Scripts\EventHandlers\DragStarted.cs" />
+     <Compile Include="Assets\Fungus\Sprite\Scripts\EventHandlers\ObjectClicked.cs" />
+     <Compile Include="Assets\Fungus\Sprite\Scripts\Parallax.cs" />
+     <Compile Include="Assets\Fungus\Sprite\Scripts\SpriteFader.cs" />
+     <Compile Include="Assets\Fungus\Thirdparty\CSVParser\CSVSupport.cs" />
+     <Compile Include="Assets\Fungus\Thirdparty\CSVParser\CsvParser.cs" />
+     <Compile Include="Assets\Fungus\Thirdparty\FungusLua\Scripts\ExecuteHandler.cs" />
+     <Compile Include="Assets\Fungus\Thirdparty\FungusLua\Scripts\FungusPrefs.cs" />
+     <Compile Include="Assets\Fungus\Thirdparty\FungusLua\Scripts\InfoText.cs" />
+     <Compile Include="Assets\Fungus\Thirdparty\FungusLua\Scripts\LuaBindings.cs" />
+     <Compile Include="Assets\Fungus\Thirdparty\FungusLua\Scripts\LuaEnvironment.cs" />
+     <Compile Include="Assets\Fungus\Thirdparty\FungusLua\Scripts\LuaScript.cs" />
+     <Compile Include="Assets\Fungus\Thirdparty\FungusLua\Scripts\LuaStore.cs" />
+     <Compile Include="Assets\Fungus\Thirdparty\FungusLua\Scripts\LuaUtils.cs" />
+     <Compile Include="Assets\Fungus\Thirdparty\FungusLua\Scripts\PODTypeFactory.cs" />
+     <Compile Include="Assets\Fungus\Thirdparty\FungusLua\Scripts\StringSubstituter.cs" />
+     <Compile Include="Assets\Fungus\Thirdparty\FungusLua\Thirdparty\JSON\JSONObject.cs" />
+     <Compile Include="Assets\Fungus\Thirdparty\FungusLua\Thirdparty\TaskManager\TaskManager.cs" />
+     <Compile Include="Assets\Fungus\Thirdparty\LeanTween\LeanTween.cs" />
+     <Compile Include="Assets\Fungus\Thirdparty\Microsoft\ReflectionExtensions.cs" />
+     <Compile Include="Assets\Fungus\Thirdparty\Usfxr\Scripts\SfxrAudioPlayer.cs" />
+     <Compile Include="Assets\Fungus\Thirdparty\Usfxr\Scripts\SfxrCacheSurrogate.cs" />
+     <Compile Include="Assets\Fungus\Thirdparty\Usfxr\Scripts\SfxrParams.cs" />
+     <Compile Include="Assets\Fungus\Thirdparty\Usfxr\Scripts\SfxrSynth.cs" />
+     <Compile Include="Assets\Fungus\Thirdparty\iTween\iTween.cs" />
+     <Compile Include="Assets\Fungus\UI\Scripts\Commands\FadeUI.cs" />
+     <Compile Include="Assets\Fungus\UI\Scripts\Commands\GetText.cs" />
+     <Compile Include="Assets\Fungus\UI\Scripts\Commands\SetInteractable.cs" />
+     <Compile Include="Assets\Fungus\UI\Scripts\Commands\SetSliderValue.cs" />
+     <Compile Include="Assets\Fungus\UI\Scripts\Commands\SetText.cs" />
+     <Compile Include="Assets\Fungus\UI\Scripts\Commands\TweenUI.cs" />
+     <Compile Include="Assets\Fungus\UI\Scripts\Commands\Write.cs" />
+     <Compile Include="Assets\Fungus\UI\Scripts\EventHandlers\ButtonClicked.cs" />
+     <Compile Include="Assets\Fungus\UI\Scripts\EventHandlers\EndEdit.cs" />
+     <Compile Include="Assets\Fungus\UI\Scripts\SelectOnEnable.cs" />
+     <Compile Include="Assets\Fungus\UI\Scripts\TextTagParser.cs" />
+     <Compile Include="Assets\Fungus\UI\Scripts\Writer.cs" />
+     <Compile Include="Assets\Fungus\UI\Scripts\WriterAudio.cs" />
+     <Compile Include="Assets\Fungus\iTween\Scripts\Commands\LookFrom.cs" />
+     <Compile Include="Assets\Fungus\iTween\Scripts\Commands\LookTo.cs" />
+     <Compile Include="Assets\Fungus\iTween\Scripts\Commands\MoveAdd.cs" />
+     <Compile Include="Assets\Fungus\iTween\Scripts\Commands\MoveFrom.cs" />
+     <Compile Include="Assets\Fungus\iTween\Scripts\Commands\MoveTo.cs" />
+     <Compile Include="Assets\Fungus\iTween\Scripts\Commands\PunchPosition.cs" />
+     <Compile Include="Assets\Fungus\iTween\Scripts\Commands\PunchRotation.cs" />
+     <Compile Include="Assets\Fungus\iTween\Scripts\Commands\PunchScale.cs" />
+     <Compile Include="Assets\Fungus\iTween\Scripts\Commands\RotateAdd.cs" />
+     <Compile Include="Assets\Fungus\iTween\Scripts\Commands\RotateFrom.cs" />
+     <Compile Include="Assets\Fungus\iTween\Scripts\Commands\RotateTo.cs" />
+     <Compile Include="Assets\Fungus\iTween\Scripts\Commands\ScaleAdd.cs" />
+     <Compile Include="Assets\Fungus\iTween\Scripts\Commands\ScaleFrom.cs" />
+     <Compile Include="Assets\Fungus\iTween\Scripts\Commands\ScaleTo.cs" />
+     <Compile Include="Assets\Fungus\iTween\Scripts\Commands\ShakePosition.cs" />
+     <Compile Include="Assets\Fungus\iTween\Scripts\Commands\ShakeRotation.cs" />
+     <Compile Include="Assets\Fungus\iTween\Scripts\Commands\ShakeScale.cs" />
+     <Compile Include="Assets\Fungus\iTween\Scripts\Commands\StopTween.cs" />
+     <Compile Include="Assets\Fungus\iTween\Scripts\Commands\StopTweens.cs" />
+     <Compile Include="Assets\Fungus\iTween\Scripts\Commands\iTweenCommand.cs" />
+     <Compile Include="Assets\FungusExamples\FungusLua\Bindings\CustomScript.cs" />
+     <Compile Include="Assets\Teste01.cs" />
+     <None Include="Assets\Fungus\Thirdparty\FungusLua\Thirdparty\JSON\readme.txt" />
+     <None Include="Assets\FungusExamples\FungusLua\Localization\stringtable.txt" />
+     <None Include="Assets\Fungus\README.txt" />
+     <None Include="Assets\Fungus\Flowchart\Editor\Resources\GLLineDraw.shader" />
+     <None Include="Assets\Fungus\Thirdparty\LeanTween\ReadMe.txt" />
+     <None Include="Assets\Fungus\Narrative\Fonts\Exo2\OFL.txt" />
+     <None Include="Assets\Resources\DialogText.txt" />
+     <None Include="Assets\Fungus\LICENSE.txt" />
+     <None Include="Assets\Fungus\link.xml" />
+     <None Include="Assets\Fungus\Thirdparty\FungusLua\Thirdparty\Moonsharp\MoonSharp.Interpreter.xml" />
+     <None Include="Assets\FungusExamples\FungusLua\Narrative\Resources\Lua\junglestory.txt" />
+     <None Include="Assets\FungusExamples\Attribution.txt" />
+     <None Include="Assets\FungusExamples\TheFacility\Fonts\aleo\SIL Open Font License.txt" />
+     <None Include="Assets\Fungus\Thirdparty\Reorderable List Field\README.txt" />
+     <None Include="Assets\FungusExamples\Sherlock\Readme.txt" />
+     <None Include="Assets\Fungus\Thirdparty\FungusLua\Resources\Types\FungusTypes.txt" />
+     <None Include="Assets\Fungus\Thirdparty\FungusLua\Resources\Types\UnityTypes.txt" />
+     <None Include="Assets\Fungus\Integrations\Spine\Readme.txt" />
+     <None Include="Assets\Fungus\Narrative\Fonts\Amaranth\SIL Open Font License.txt" />
+     <None Include="Assets\FungusExamples\FungusTown\Readme.txt" />
+     <None Include="Assets\Fungus\Thirdparty\Reorderable List Field\LICENSE.txt" />
+     <None Include="Assets\Fungus\Narrative\Images\Attribution.txt" />
+     <None Include="Assets\Fungus\Thirdparty\FungusLua\Resources\Lua\inspect.txt" />
+     <None Include="Assets\Fungus\Thirdparty\FungusLua\Resources\Lua\fungus.txt" />
+     <None Include="Assets\Fungus\CHANGELOG.txt" />
+     <None Include="Assets\Fungus\Thirdparty\Reorderable List Field\Editor\Editor.ReorderableList.xml" />
+ <Reference Include="UnityEngine.UI">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Networking">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
+ </Reference>
+ <Reference Include="MoonSharp.Interpreter">
+ <HintPath>C:/Users/mmosc/Documents/Em-seu-lugar/Unity Project/Assets/Fungus/Thirdparty/FungusLua/Thirdparty/Moonsharp/MoonSharp.Interpreter.dll</HintPath>
+ </Reference>
+ <Reference Include="MoonSharp.RemoteDebugger">
+ <HintPath>C:/Users/mmosc/Documents/Em-seu-lugar/Unity Project/Assets/Fungus/Thirdparty/FungusLua/Thirdparty/Moonsharp/MoonSharp.RemoteDebugger.dll</HintPath>
+ </Reference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  
+</Project>

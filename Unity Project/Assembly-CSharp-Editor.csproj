@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <RootNamespace></RootNamespace>
+    <ProjectGuid>{3581A99C-59E9-3D7A-FE33-C8839A045BC3}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <AssemblyName>Assembly-CSharp-Editor</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <BaseDirectory>Assets</BaseDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Temp\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_4_0;UNITY_5_4;UNITY_5;ENABLE_NEW_BUGREPORTER;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_DUCK_TYPING;ENABLE_EDITOR_RETINA;ENABLE_RETINA_GUISTYLES;ENABLE_FRAME_DEBUGGER;ENABLE_GENERICS;ENABLE_HOME_SCREEN;ENABLE_IMAGEEFFECTS;ENABLE_LIGHT_PROBES_LEGACY;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_PLUGIN_INSPECTOR;ENABLE_SHADOWS;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_SPRITE_POLYGON;ENABLE_TERRAIN;ENABLE_RAKNET;ENABLE_UNET;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;INCLUDE_DYNAMIC_GI;INCLUDE_GI;INCLUDE_IL2CPP;INCLUDE_DIRECTX12;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;INCLUDE_PUBNUB;ENABLE_LOCALIZATION;ENABLE_ANDROID_ATLAS_ETC1_COMPRESSION;ENABLE_EDITOR_TESTS_RUNNER;UNITY_STANDALONE_WIN;UNITY_STANDALONE;ENABLE_SUBSTANCE;ENABLE_TEXTUREID_MAP;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITYWEBREQUEST;ENABLE_EVENT_QUEUE;ENABLE_CLUSTERINPUT;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;ENABLE_PROFILER;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;UNITY_TEAM_LICENSE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Temp\bin\Release\</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.XML" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="UnityEngine">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+     <Compile Include="Assets\Fungus\Audio\Editor\ControlAudioEditor.cs" />
+     <Compile Include="Assets\Fungus\Camera\Editor\CameraMenuItems.cs" />
+     <Compile Include="Assets\Fungus\Camera\Editor\ViewEditor.cs" />
+     <Compile Include="Assets\Fungus\Flowchart\Editor\AssetModProcessor.cs" />
+     <Compile Include="Assets\Fungus\Flowchart\Editor\BlockEditor.cs" />
+     <Compile Include="Assets\Fungus\Flowchart\Editor\BlockInspector.cs" />
+     <Compile Include="Assets\Fungus\Flowchart\Editor\CallEditor.cs" />
+     <Compile Include="Assets\Fungus\Flowchart\Editor\CommandEditor.cs" />
+     <Compile Include="Assets\Fungus\Flowchart\Editor\CommandListAdaptor.cs" />
+     <Compile Include="Assets\Fungus\Flowchart\Editor\CustomGUI.cs" />
+     <Compile Include="Assets\Fungus\Flowchart\Editor\EditorExtensions.cs" />
+     <Compile Include="Assets\Fungus\Flowchart\Editor\EditorZoomArea.cs" />
+     <Compile Include="Assets\Fungus\Flowchart\Editor\EventHandlerEditor.cs" />
+     <Compile Include="Assets\Fungus\Flowchart\Editor\Extensions\SerializedPropertyExtensions.cs" />
+     <Compile Include="Assets\Fungus\Flowchart\Editor\FlowchartEditor.cs" />
+     <Compile Include="Assets\Fungus\Flowchart\Editor\FlowchartMenuItems.cs" />
+     <Compile Include="Assets\Fungus\Flowchart\Editor\FlowchartWindow.cs" />
+     <Compile Include="Assets\Fungus\Flowchart\Editor\FungusEditorResources.cs" />
+     <Compile Include="Assets\Fungus\Flowchart\Editor\GLDraw.cs" />
+     <Compile Include="Assets\Fungus\Flowchart\Editor\IfEditor.cs" />
+     <Compile Include="Assets\Fungus\Flowchart\Editor\InvokeEventEditor.cs" />
+     <Compile Include="Assets\Fungus\Flowchart\Editor\InvokeMethodEditor.cs" />
+     <Compile Include="Assets\Fungus\Flowchart\Editor\LabelEditor.cs" />
+     <Compile Include="Assets\Fungus\Flowchart\Editor\SetVariableEditor.cs" />
+     <Compile Include="Assets\Fungus\Flowchart\Editor\VariableEditor.cs" />
+     <Compile Include="Assets\Fungus\Flowchart\Editor\VariableListAdaptor.cs" />
+     <Compile Include="Assets\Fungus\Narrative\Editor\CharacterEditor.cs" />
+     <Compile Include="Assets\Fungus\Narrative\Editor\DialogInputEditor.cs" />
+     <Compile Include="Assets\Fungus\Narrative\Editor\LocalizationEditor.cs" />
+     <Compile Include="Assets\Fungus\Narrative\Editor\MenuEditor.cs" />
+     <Compile Include="Assets\Fungus\Narrative\Editor\MenuTimerEditor.cs" />
+     <Compile Include="Assets\Fungus\Narrative\Editor\NarrativeMenuItems.cs" />
+     <Compile Include="Assets\Fungus\Narrative\Editor\PortraitEditor.cs" />
+     <Compile Include="Assets\Fungus\Narrative\Editor\SayEditor.cs" />
+     <Compile Include="Assets\Fungus\Narrative\Editor\StageEditor.cs" />
+     <Compile Include="Assets\Fungus\Sprite\Editor\SetColliderEditor.cs" />
+     <Compile Include="Assets\Fungus\Sprite\Editor\SpriteMenuItems.cs" />
+     <Compile Include="Assets\Fungus\Thirdparty\FungusLua\Scripts\Editor\DropDownControl.cs" />
+     <Compile Include="Assets\Fungus\Thirdparty\FungusLua\Scripts\Editor\ExecuteHandlerEditor.cs" />
+     <Compile Include="Assets\Fungus\Thirdparty\FungusLua\Scripts\Editor\LuaBindingsEditor.cs" />
+     <Compile Include="Assets\Fungus\Thirdparty\FungusLua\Scripts\Editor\LuaScriptEditor.cs" />
+     <Compile Include="Assets\Fungus\Thirdparty\FungusLua\Scripts\Editor\LuaStoreEditor.cs" />
+     <Compile Include="Assets\Fungus\Thirdparty\FungusLua\Scripts\Editor\LuaUtilsEditor.cs" />
+     <Compile Include="Assets\Fungus\Thirdparty\FungusLua\Scripts\Editor\MenuItems.cs" />
+     <Compile Include="Assets\Fungus\Thirdparty\Usfxr\Editor\SfxrGenerator.cs" />
+     <Compile Include="Assets\Fungus\UI\Editor\WriteEditor.cs" />
+     <Compile Include="Assets\Fungus\UI\Editor\WriterAudioEditor.cs" />
+     <None Include="Assets\Fungus\Thirdparty\FungusLua\Thirdparty\JSON\readme.txt" />
+     <None Include="Assets\FungusExamples\FungusLua\Localization\stringtable.txt" />
+     <None Include="Assets\Fungus\README.txt" />
+     <None Include="Assets\Fungus\Flowchart\Editor\Resources\GLLineDraw.shader" />
+     <None Include="Assets\Fungus\Thirdparty\LeanTween\ReadMe.txt" />
+     <None Include="Assets\Fungus\Narrative\Fonts\Exo2\OFL.txt" />
+     <None Include="Assets\Resources\DialogText.txt" />
+     <None Include="Assets\Fungus\LICENSE.txt" />
+     <None Include="Assets\Fungus\link.xml" />
+     <None Include="Assets\Fungus\Thirdparty\FungusLua\Thirdparty\Moonsharp\MoonSharp.Interpreter.xml" />
+     <None Include="Assets\FungusExamples\FungusLua\Narrative\Resources\Lua\junglestory.txt" />
+     <None Include="Assets\FungusExamples\Attribution.txt" />
+     <None Include="Assets\FungusExamples\TheFacility\Fonts\aleo\SIL Open Font License.txt" />
+     <None Include="Assets\Fungus\Thirdparty\Reorderable List Field\README.txt" />
+     <None Include="Assets\FungusExamples\Sherlock\Readme.txt" />
+     <None Include="Assets\Fungus\Thirdparty\FungusLua\Resources\Types\FungusTypes.txt" />
+     <None Include="Assets\Fungus\Thirdparty\FungusLua\Resources\Types\UnityTypes.txt" />
+     <None Include="Assets\Fungus\Integrations\Spine\Readme.txt" />
+     <None Include="Assets\Fungus\Narrative\Fonts\Amaranth\SIL Open Font License.txt" />
+     <None Include="Assets\FungusExamples\FungusTown\Readme.txt" />
+     <None Include="Assets\Fungus\Thirdparty\Reorderable List Field\LICENSE.txt" />
+     <None Include="Assets\Fungus\Narrative\Images\Attribution.txt" />
+     <None Include="Assets\Fungus\Thirdparty\FungusLua\Resources\Lua\inspect.txt" />
+     <None Include="Assets\Fungus\Thirdparty\FungusLua\Resources\Lua\fungus.txt" />
+     <None Include="Assets\Fungus\CHANGELOG.txt" />
+     <None Include="Assets\Fungus\Thirdparty\Reorderable List Field\Editor\Editor.ReorderableList.xml" />
+ <Reference Include="UnityEditor.Advertisements">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Advertisements/Editor/UnityEditor.Advertisements.dll</HintPath>
+ </Reference>
+ <Reference Include="nunit.framework">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/EditorTestsRunner/Editor/nunit.framework.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.EditorTestsRunner">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/EditorTestsRunner/Editor/UnityEditor.EditorTestsRunner.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UI">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.UI">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/Editor/UnityEditor.UI.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Networking">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.Networking">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Networking/Editor/UnityEditor.Networking.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.TreeEditor">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/TreeEditor/Editor/UnityEditor.TreeEditor.dll</HintPath>
+ </Reference>
+ <Reference Include="MoonSharp.Interpreter">
+ <HintPath>C:/Users/mmosc/Documents/Em-seu-lugar/Unity Project/Assets/Fungus/Thirdparty/FungusLua/Thirdparty/Moonsharp/MoonSharp.Interpreter.dll</HintPath>
+ </Reference>
+ <Reference Include="MoonSharp.RemoteDebugger">
+ <HintPath>C:/Users/mmosc/Documents/Em-seu-lugar/Unity Project/Assets/Fungus/Thirdparty/FungusLua/Thirdparty/Moonsharp/MoonSharp.RemoteDebugger.dll</HintPath>
+ </Reference>
+ <Reference Include="Editor.ReorderableList">
+ <HintPath>C:/Users/mmosc/Documents/Em-seu-lugar/Unity Project/Assets/Fungus/Thirdparty/Reorderable List Field/Editor/Editor.ReorderableList.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.Graphs">
+ <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEditor.Graphs.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.Android.Extensions">
+ <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.iOS.Extensions">
+ <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.WebGL.Extensions">
+ <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.WindowsStandalone.Extensions">
+ <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/windowsstandalonesupport/UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
+ </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Assembly-CSharp.csproj">
+      <Project>{BDBCE7D3-139D-3EDB-816D-FB1D73476D25}</Project>      <Name>Assembly-CSharp</Name>    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  
+</Project>
