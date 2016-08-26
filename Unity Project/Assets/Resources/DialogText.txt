@@ -8,10 +8,10 @@ Preciso de ajuda
 Por favor
 
 #MENU.DialogText.6
-Opção 2
+Resposta 1
 
 #MENU.DialogText.11
-Opção 3
+Resposta 2
 
 #SAY.DialogText.8.
 Aconteceu sim, fiz uma burrada

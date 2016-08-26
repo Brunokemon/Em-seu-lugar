@@ -2,17 +2,23 @@
 using System.Collections;
 using Fungus;
 
+[RequireComponent (typeof(TextReader))]
+[RequireComponent (typeof(ViewManager))]
 public class FungusManager : MonoBehaviour {
 
 	public Flowchart fcJulia;
 
 	private Block currentBlock;
 	private string blockID;
-
 	public int lastCommandID;
-	public int activeCommandID;
-	public string blockName;
-	public Teste01 TextFinder;
+
+	public TextReader TextReader;
+	public ViewManager viewManager;
+
+	void Awake (){
+		TextReader = gameObject.GetComponent<TextReader> ();
+		viewManager = gameObject.GetComponent<ViewManager> ();
+	}
 
 	void Start(){
 		blockID = fcJulia.GetStringVariable("Block_ID");
@@ -28,19 +34,17 @@ public class FungusManager : MonoBehaviour {
 			print ("novo bloco: "+ blockID);
 		}
 
-		blockName = currentBlock.blockName;
-		activeCommandID = currentBlock.activeCommand.itemId;
-
 		//Se o commandID mudou imprimir a mensagem do comando finalizado
 		if (lastCommandID != currentBlock.activeCommand.itemId) {
-			PrintMessage (currentBlock);
+			SendSAYMessage (currentBlock);
 			lastCommandID = currentBlock.activeCommand.itemId;
 		}
 
 	}
 
-	void PrintMessage (Block block){
-		string line = TextFinder.FindCorectLine (block.activeCommand.itemId);
+	void SendSAYMessage (Block block){
+		string line = TextReader.FindCorectLine (block.activeCommand.itemId, "SAY");
 		print (line);
+		viewManager.PrintMessage (line);
 	}
 }
