@@ -20,8 +20,17 @@ public class Teste01 : MonoBehaviour {
 		//Seleciona apenas o texto dos Commands exportados no texto e imprime no console
 		for (int t = 0; t < allLines.Count-6; t++) {
 			if (t % 3 == 1 || t == 1){
-				print (allLines[t]);
+				//print (allLines[t]);
 			}
 		}
+	}
+
+	public string FindCorectLine(int commandID){
+		for (int s = 0; s < allLines.Count; s++) {
+			if (allLines[s] == string.Format("#SAY.DialogText.{0}.",commandID)) {
+				return allLines [s+1];
+			}
+		}
+		return null;
 	}
 }

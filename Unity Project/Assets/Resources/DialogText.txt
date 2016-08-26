@@ -1,21 +1,27 @@
 #SAY.DialogText.1.
-Dialog 01
+Amiga, ta ai?
 
 #SAY.DialogText.2.
-Dialog 02
+Preciso de ajuda
 
 #SAY.DialogText.3.
-Dialog 03
-
-#SAY.DialogText.4.
-Dialog 04
-
-#SAY.DialogText.5.
-Dialog 05
+Por favor
 
 #MENU.DialogText.6
-Opção 1
+Opção 2
+
+#MENU.DialogText.11
+Opção 3
 
 #SAY.DialogText.8.
-Yay! bloco dois
+Aconteceu sim, fiz uma burrada
+
+#SAY.DialogText.10.
+Queimei o jantar do zé
+
+#SAY.DialogText.13.
+Ele ficou puto
+
+#SAY.DialogText.14.
+Jogou tudo no chao
 

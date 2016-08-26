@@ -227,6 +227,7 @@
      <Compile Include="Assets\Fungus\iTween\Scripts\Commands\StopTweens.cs" />
      <Compile Include="Assets\Fungus\iTween\Scripts\Commands\iTweenCommand.cs" />
      <Compile Include="Assets\FungusExamples\FungusLua\Bindings\CustomScript.cs" />
+     <Compile Include="Assets\FungusManager.cs" />
      <Compile Include="Assets\Teste01.cs" />
      <None Include="Assets\Fungus\Thirdparty\FungusLua\Thirdparty\JSON\readme.txt" />
      <None Include="Assets\FungusExamples\FungusLua\Localization\stringtable.txt" />
@@ -248,6 +249,7 @@
      <None Include="Assets\Fungus\Integrations\Spine\Readme.txt" />
      <None Include="Assets\Fungus\Narrative\Fonts\Amaranth\SIL Open Font License.txt" />
      <None Include="Assets\FungusExamples\FungusTown\Readme.txt" />
+     <None Include="Assets\Resources\~$alogText.txt" />
      <None Include="Assets\Fungus\Thirdparty\Reorderable List Field\LICENSE.txt" />
      <None Include="Assets\Fungus\Narrative\Images\Attribution.txt" />
      <None Include="Assets\Fungus\Thirdparty\FungusLua\Resources\Lua\inspect.txt" />
