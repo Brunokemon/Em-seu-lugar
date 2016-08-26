@@ -1,0 +1,27 @@
+#SAY.DialogText.1.
+Amiga, ta ai?
+
+#SAY.DialogText.2.
+Preciso de ajuda
+
+#SAY.DialogText.3.
+Por favor
+
+#MENU.DialogText.6
+Resposta 1
+
+#MENU.DialogText.11
+Resposta 2
+
+#SAY.DialogText.8.
+Aconteceu sim, fiz uma burrada
+
+#SAY.DialogText.10.
+Queimei o jantar do zé
+
+#SAY.DialogText.13.
+Ele ficou puto
+
+#SAY.DialogText.14.
+Jogou tudo no chao
+
