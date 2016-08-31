@@ -1,27 +1,45 @@
-#SAY.DialogText.1.
+#SAY.DialogText.1.Julia
 Amiga, ta ai?
 
-#SAY.DialogText.2.
+#SAY.DialogText.2.Julia
 Preciso de ajuda
 
-#SAY.DialogText.3.
+#SAY.DialogText.3.Julia
 Por favor
 
 #MENU.DialogText.6
-Resposta 1
+dsakdddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd
 
 #MENU.DialogText.11
 Resposta 2
 
-#SAY.DialogText.8.
+#SAY.DialogText.18.Player
+Resposta do Jogador 01
+
+#SAY.DialogText.19.Player
+Resposta do Jogador 02
+
+#SAY.DialogText.8.Julia
 Aconteceu sim, fiz uma burrada
 
-#SAY.DialogText.10.
+#SAY.DialogText.20.Player
+Resposta do playeyr no bloco 02
+
+#SAY.DialogText.10.Julia
 Queimei o jantar do zé
 
-#SAY.DialogText.13.
+#SAY.DialogText.13.Julia
 Ele ficou puto
 
-#SAY.DialogText.14.
+#SAY.DialogText.14.Julia
 Jogou tudo no chao
+
+#CHARACTER.Player
+Player
+
+#CHARACTER.Julia
+Julia
+
+#CHARACTER.Character Name
+Character Name
 

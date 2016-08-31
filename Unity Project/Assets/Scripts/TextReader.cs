@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
+using Fungus;
 
 
 public class TextReader : MonoBehaviour {
@@ -25,21 +26,13 @@ public class TextReader : MonoBehaviour {
 		}
 	}
 
-	public string FindCorectLine(int commandID, string commandType){
-		if (commandType == "SAY") {
+	public string FindCorectLine(int commandID, string character){
+		if (character == "Julia") {
 			for (int s = 0; s < allLines.Count; s++) {
-				if (allLines [s] == string.Format ("#SAY.DialogText.{0}.", commandID)) {
+				if (allLines [s] == string.Format ("#SAY.DialogText.{0}.{1}", commandID,character)) {
 					return allLines [s + 1];
 				}
 			}
-		} 
-		else if (commandType == "MENU") {
-			for (int s = 0; s < allLines.Count; s++) {
-				if (allLines [s] == string.Format ("#MENU.DialogText.{0}", commandID)) {
-					return allLines [s + 1];
-				}
-			}
-
 		}
 		return null;
 	}

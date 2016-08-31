@@ -16,10 +16,10 @@ public class FungusManager : MonoBehaviour {
 	public int lastCommandID;
 
 
-
 	void Awake (){
 		TextReader = gameObject.GetComponent<TextReader> ();
 		viewManager = gameObject.GetComponent<ViewManager> ();
+
 	}
 
 	void Start(){
@@ -29,24 +29,23 @@ public class FungusManager : MonoBehaviour {
 	}
 
 	void Update(){
-		
+		//Check if block has changed update variables and PrintMenuMessage
 		if (blockID != currentFlowchart.GetStringVariable("Block_ID")){
 			blockID = currentFlowchart.GetStringVariable("Block_ID");
 			currentBlock = currentFlowchart.GetExecutingBlocks () [0];
 			print ("novo bloco: "+ blockID);
 		}
 
-		//Se o commandID mudou imprimir a mensagem do comando finalizado
+		//if commandID has changed printSayMessage and update variables
 		if (lastCommandID != currentBlock.activeCommand.itemId) {
-			SendSAYMessage (currentBlock);
+			SendSAYMessage (currentBlock, "Julia");
 			lastCommandID = currentBlock.activeCommand.itemId;
 		}
-
 	}
 
-	void SendSAYMessage (Block block){
-		string line = TextReader.FindCorectLine (block.activeCommand.itemId, "SAY");
-		print (line);
-		viewManager.PrintSAYMessage (line);
+	void SendSAYMessage (Block block, string character){
+		string line = TextReader.FindCorectLine (block.activeCommand.itemId, character);
+		//print (line);
+		viewManager.PrintSAYMessage (line, character);
 	}
 }
