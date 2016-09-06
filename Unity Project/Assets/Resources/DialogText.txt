@@ -23,7 +23,7 @@ Resposta do Jogador 02
 Aconteceu sim, fiz uma burrada
 
 #SAY.DialogText.20.Player
-Resposta do playeyr no bloco 02
+Resposta do player no bloco 02
 
 #SAY.DialogText.10.Julia
 Queimei o jantar do zé
@@ -42,4 +42,3 @@ Julia
 
 #CHARACTER.Character Name
 Character Name
-

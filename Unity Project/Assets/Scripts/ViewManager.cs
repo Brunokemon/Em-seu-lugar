@@ -3,19 +3,22 @@ using UnityEngine.UI;
 using System.Collections;
 using Fungus;
 
-public class ViewManager : MonoBehaviour {
+public class ViewManager : MonoBehaviour
+{
 
 	public SayDialog sayDialog;
 	public Font msgFont;
 
 	private int totalMessages;
 
-	void Start () {
+	void Start ()
+	{
 		//PrintMessage (sayDialog, "Teste01");
 	}
 
 	//Creates a new gameObject inside the current sayDialog with the text sent
-	public void PrintSAYMessage(string text, string character){
+	public void PrintSAYMessage (string text, string character)
+	{
 		if (text != null) {
 			Transform panel = sayDialog.gameObject.transform.Find ("Panel");
 			GameObject mensagem = new GameObject ();
@@ -37,7 +40,8 @@ public class ViewManager : MonoBehaviour {
 		}
 	}
 
-	public void UpdateSayDialog(SayDialog newDialog){
+	public void UpdateSayDialog (SayDialog newDialog)
+	{
 		
 	}
 }

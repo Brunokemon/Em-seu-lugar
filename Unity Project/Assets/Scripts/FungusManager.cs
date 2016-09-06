@@ -47,8 +47,7 @@ public class FungusManager : MonoBehaviour
 
 	void SendSAYMessage (Block block, string character)
 	{
-		string line = TextReader.FindCorectLine (block.activeCommand.itemId, character);
-		//print (line);
+		string line = TextReader.FindCorrectLine (block.activeCommand.itemId);
 		viewManager.PrintSAYMessage (line, character);
 	}
 }
