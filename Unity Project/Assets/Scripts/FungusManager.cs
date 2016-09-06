@@ -4,7 +4,8 @@ using Fungus;
 
 [RequireComponent (typeof(TextReader))]
 [RequireComponent (typeof(ViewManager))]
-public class FungusManager : MonoBehaviour {
+public class FungusManager : MonoBehaviour
+{
 
 	private TextReader TextReader;
 	private ViewManager viewManager;
@@ -15,25 +16,26 @@ public class FungusManager : MonoBehaviour {
 	public string blockID;
 	public int lastCommandID;
 
-
-	void Awake (){
+	void Awake ()
+	{
 		TextReader = gameObject.GetComponent<TextReader> ();
 		viewManager = gameObject.GetComponent<ViewManager> ();
-
 	}
 
-	void Start(){
-		blockID = currentFlowchart.GetStringVariable("Block_ID");
+	void Start ()
+	{
+		blockID = currentFlowchart.GetStringVariable ("Block_ID");
 		currentBlock = currentFlowchart.FindBlock (blockID);
 		lastCommandID = currentBlock.commandList [0].itemId;
 	}
 
-	void Update(){
+	void Update ()
+	{
 		//Check if block has changed update variables and PrintMenuMessage
-		if (blockID != currentFlowchart.GetStringVariable("Block_ID")){
-			blockID = currentFlowchart.GetStringVariable("Block_ID");
+		if (blockID != currentFlowchart.GetStringVariable ("Block_ID")) {
+			blockID = currentFlowchart.GetStringVariable ("Block_ID");
 			currentBlock = currentFlowchart.GetExecutingBlocks () [0];
-			print ("novo bloco: "+ blockID);
+			print ("novo bloco: " + blockID);
 		}
 
 		//if commandID has changed printSayMessage and update variables
@@ -43,7 +45,8 @@ public class FungusManager : MonoBehaviour {
 		}
 	}
 
-	void SendSAYMessage (Block block, string character){
+	void SendSAYMessage (Block block, string character)
+	{
 		string line = TextReader.FindCorectLine (block.activeCommand.itemId, character);
 		//print (line);
 		viewManager.PrintSAYMessage (line, character);
