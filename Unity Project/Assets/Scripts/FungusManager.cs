@@ -47,13 +47,12 @@ public class FungusManager : MonoBehaviour
 			//Verifica se é um Say
 			if (say != null) {
 				//Pega o Character referente ao Say
-				string characterName = say.character.name;
-				SendSAYMessage (currentBlock, characterName);
+				SendSAYMessage (currentBlock, say.character);
 			}
 		}
 	}
 
-	void SendSAYMessage (Block block, string character)
+	void SendSAYMessage (Block block, Character character)
 	{
 		string line = TextReader.FindCorrectLine (block.activeCommand.itemId);
 		viewManager.PrintSAYMessage (line, character);
