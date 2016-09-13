@@ -1,12 +1,12 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 using Fungus;
 
 [RequireComponent (typeof(TextReader))]
 [RequireComponent (typeof(ViewManager))]
 public class FungusManager : MonoBehaviour
 {
-
 	private TextReader TextReader;
 	private ViewManager viewManager;
 
@@ -15,6 +15,18 @@ public class FungusManager : MonoBehaviour
 
 	public string blockID;
 	public int lastCommandID;
+
+	//IDs dos comandos que já foram executados
+	List<SaveValues> savedID = new List<SaveValues> ();
+
+	void SaveOrder (string block, int command)
+	{
+		SaveValues save = new SaveValues ();
+		save.block = block;
+		save.command = command;
+		save.flowchart = 0;
+		savedID.Add (save);
+	}
 
 	void Awake ()
 	{
@@ -27,6 +39,7 @@ public class FungusManager : MonoBehaviour
 		blockID = currentFlowchart.GetStringVariable ("Block_ID");
 		currentBlock = currentFlowchart.FindBlock (blockID);
 		lastCommandID = currentBlock.commandList [0].itemId;
+		SaveOrder (blockID, lastCommandID);
 	}
 
 	void Update ()
@@ -49,6 +62,7 @@ public class FungusManager : MonoBehaviour
 				//Pega o Character referente ao Say
 				SendSAYMessage (currentBlock, say.character);
 			}
+			SaveOrder (blockID, lastCommandID);
 		}
 	}
 
@@ -57,4 +71,14 @@ public class FungusManager : MonoBehaviour
 		string line = TextReader.FindCorrectLine (block.activeCommand.itemId);
 		viewManager.PrintSAYMessage (line, character);
 	}
+}
+
+//Classe para usar com Dictionary para guardar valores (frase e character) de cada SayDialog
+class SaveValues
+{
+	public int flowchart { get; set; }
+
+	public string block { get; set; }
+
+	public int command { get; set; }
 }
