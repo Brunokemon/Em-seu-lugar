@@ -40,8 +40,16 @@ public class FungusManager : MonoBehaviour
 
 		//if commandID has changed printSayMessage and update variables
 		if (lastCommandID != currentBlock.activeCommand.itemId) {
-			SendSAYMessage (currentBlock, "Julia");
 			lastCommandID = currentBlock.activeCommand.itemId;
+
+			//Pega o comando atual
+			Say say = currentBlock.activeCommand as Say;
+			//Verifica se é um Say
+			if (say != null) {
+				//Pega o Character referente ao Say
+				string characterName = say.character.name;
+				SendSAYMessage (currentBlock, characterName);
+			}
 		}
 	}
 

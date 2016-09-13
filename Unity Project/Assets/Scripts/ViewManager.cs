@@ -13,7 +13,6 @@ public class ViewManager : MonoBehaviour
 
 	void Start ()
 	{
-		//PrintMessage (sayDialog, "Teste01");
 	}
 
 	//Creates a new gameObject inside the current sayDialog with the text sent
