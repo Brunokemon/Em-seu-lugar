@@ -16,7 +16,7 @@ public class ViewManager : MonoBehaviour
 
 	List<GameObject> allMessages = new List<GameObject>();
 
-	void Start () {
+	void Awake () {
 		PrintSAYMessage ("                       ", null);
 	}
 	void Update ()

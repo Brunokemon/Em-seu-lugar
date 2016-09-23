@@ -12,7 +12,6 @@ public class FungusManager : MonoBehaviour
 
 	public Flowchart currentFlowchart;
 	private Block currentBlock;
-	private List<Say> allSayDialogs = new List<Say> ();
 
 	public string blockID;
 	public int lastCommandID;
@@ -41,6 +40,7 @@ public class FungusManager : MonoBehaviour
 		currentBlock = currentFlowchart.FindBlock (blockID);
 		lastCommandID = currentBlock.commandList [0].itemId;
 		SaveOrder (blockID, lastCommandID);
+
 	}
 
 	void Update ()
@@ -64,8 +64,7 @@ public class FungusManager : MonoBehaviour
 			//Verifica se é um Say
 			if (say != null) {
 				//Pega o Character referente ao Say
-
-				SendSAYMessage (currentBlock, say.character);
+				SendSAYMessage(currentBlock,say.character);
 			}
 			SaveOrder (blockID, lastCommandID);
 		}
