@@ -16,6 +16,9 @@ public class ViewManager : MonoBehaviour
 
 	List<GameObject> allMessages = new List<GameObject>();
 
+	void Start () {
+		PrintSAYMessage ("                       ", null);
+	}
 	void Update ()
 	{
 		//SCRLL utilizando as setas do teclado
@@ -48,8 +51,11 @@ public class ViewManager : MonoBehaviour
 			//msgTxt.rectTransform.sizeDelta = new Vector2 (350, 50);
 
 			LayoutElement layoutEle = mensagem.gameObject.AddComponent<LayoutElement> ();
-			layoutEle.preferredHeight = 50;
+			layoutEle.flexibleWidth = 1;
 			layoutEle.preferredWidth = 350;
+			layoutEle.flexibleHeight = 1;
+			layoutEle.minHeight = 100;
+
 
 
 			if (allMessages.Count == 0) {

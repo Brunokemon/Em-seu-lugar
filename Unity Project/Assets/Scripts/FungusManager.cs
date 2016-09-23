@@ -52,9 +52,6 @@ public class FungusManager : MonoBehaviour
 			currentBlock = currentFlowchart.GetExecutingBlocks () [0];
 
 			//change all say's wait for click to false
-			foreach (Say say in currentBlock.commandList){
-				say.waitForClick = false;
-			}
 			print ("novo bloco: " + blockID);
 		}
 
