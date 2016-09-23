@@ -12,6 +12,7 @@ public class FungusManager : MonoBehaviour
 
 	public Flowchart currentFlowchart;
 	private Block currentBlock;
+	private List<Say> allSayDialogs = new List<Say> ();
 
 	public string blockID;
 	public int lastCommandID;
@@ -46,8 +47,14 @@ public class FungusManager : MonoBehaviour
 	{
 		//Check if block has changed update variables and PrintMenuMessage
 		if (blockID != currentFlowchart.GetStringVariable ("Block_ID")) {
+
 			blockID = currentFlowchart.GetStringVariable ("Block_ID");
 			currentBlock = currentFlowchart.GetExecutingBlocks () [0];
+
+			//change all say's wait for click to false
+			foreach (Say say in currentBlock.commandList){
+				say.waitForClick = false;
+			}
 			print ("novo bloco: " + blockID);
 		}
 
@@ -60,6 +67,7 @@ public class FungusManager : MonoBehaviour
 			//Verifica se é um Say
 			if (say != null) {
 				//Pega o Character referente ao Say
+
 				SendSAYMessage (currentBlock, say.character);
 			}
 			SaveOrder (blockID, lastCommandID);

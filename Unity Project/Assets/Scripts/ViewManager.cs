@@ -37,24 +37,29 @@ public class ViewManager : MonoBehaviour
 		if (text != null) {
 			Transform panel = sayDialog.gameObject.transform.Find ("Panel");
 			Transform mask = panel.gameObject.transform.Find ("HistoryMask");
+			Transform grid = mask.gameObject.transform.Find ("Grid");
 			GameObject mensagem = new GameObject ();
-			mensagem.transform.parent = mask;
+			mensagem.transform.parent = grid;
 
 			Text msgTxt = mensagem.gameObject.AddComponent<Text> ();
 			msgTxt.font = msgFont;
 			msgTxt.fontSize = 25;
 			msgTxt.text = text;
-			msgTxt.rectTransform.sizeDelta = new Vector2 (350, 50);
+			//msgTxt.rectTransform.sizeDelta = new Vector2 (350, 50);
+
+			LayoutElement layoutEle = mensagem.gameObject.AddComponent<LayoutElement> ();
+			layoutEle.preferredHeight = 50;
+			layoutEle.preferredWidth = 350;
 
 
 			if (allMessages.Count == 0) {
-				msgTxt.rectTransform.anchoredPosition = new Vector2 (0, 200);
+				msgTxt.rectTransform.anchoredPosition = new Vector2 (0, 0);
 			} else {
 				//Gets the anchoredPosition of the last object in the allMessages list, and add +80 to it's Y position
 				msgTxt.rectTransform.anchoredPosition = allMessages.Last ().transform.GetComponentInChildren<RectTransform> ().anchoredPosition + (-Vector2.up * 80);
 			}
 
-			if (character.name == "Player") {
+			if (character.nameText == "Player") {
 				msgTxt.color = Color.white;
 			} else {
 				msgTxt.color = Color.yellow;
