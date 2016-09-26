@@ -12,26 +12,13 @@ public class ViewManager : MonoBehaviour
 	public Font msgFont;
 
 	private int totalMessages;
-	private float scrollSpeed = 2f;
+	//private float scrollSpeed = 2f;
 
 	List<GameObject> allMessages = new List<GameObject>();
 
 	void Awake () {
-		PrintSAYMessage ("                       ", null);
-	}
-	void Update ()
-	{
-		//SCRLL utilizando as setas do teclado
-		if (Input.GetKey(KeyCode.UpArrow)) {
-			foreach (GameObject go in allMessages) {
-				go.transform.Translate (-Vector3.up * scrollSpeed);
-			}
-		}
-		else if (Input.GetKey(KeyCode.DownArrow)) {
-			foreach (GameObject go in allMessages) {
-				go.transform.Translate (Vector3.up * scrollSpeed);
-			}
-		}
+		//Adiciona uma mensagem vazia no início, pois essa mensagem é de dificil vizualização com o scroll
+		PrintSAYMessage ("", null);
 	}
 
 	//Creates a new gameObject inside the current sayDialog with the text sent

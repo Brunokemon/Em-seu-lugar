@@ -228,6 +228,7 @@
      <Compile Include="Assets\Fungus\iTween\Scripts\Commands\iTweenCommand.cs" />
      <Compile Include="Assets\FungusExamples\FungusLua\Bindings\CustomScript.cs" />
      <Compile Include="Assets\Scripts\FungusManager.cs" />
+     <Compile Include="Assets\Scripts\SendMessage.cs" />
      <Compile Include="Assets\Scripts\TextReader.cs" />
      <Compile Include="Assets\Scripts\ViewManager.cs" />
      <None Include="Assets\Fungus\Thirdparty\FungusLua\Thirdparty\JSON\readme.txt" />
