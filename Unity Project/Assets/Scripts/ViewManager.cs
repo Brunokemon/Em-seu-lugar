@@ -25,7 +25,9 @@ public class ViewManager : MonoBehaviour
 	public void PrintSAYMessage (string text, Character character)
 	{
 		if (text != null) {
-			Transform panel = sayDialog.gameObject.transform.Find ("Panel");
+			Transform julia = sayDialog.gameObject.transform.parent;
+			Transform historyCanvas = julia.gameObject.transform.Find ("HistoryCanvas");
+			Transform panel = historyCanvas.gameObject.transform.Find ("Panel");
 			Transform mask = panel.gameObject.transform.Find ("HistoryMask");
 			Transform grid = mask.gameObject.transform.Find ("Grid");
 			GameObject mensagem = new GameObject ();
