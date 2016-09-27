@@ -3,14 +3,6 @@ using System.Collections;
 using System.Collections.Generic;
 using Fungus;
 
-//Classe para usar com Dictionary para guardar valores (frase e character) de cada SayDialog
-class SayValues
-{
-	public string text { get; set; }
-
-	public string character { get; set; }
-}
-
 public class TextReader : MonoBehaviour
 {
 	//Texto exportado pelo próprio Fungus - Localization
@@ -19,9 +11,11 @@ public class TextReader : MonoBehaviour
 
 	void Awake ()
 	{
+		//Cria um dictionary para os SayDialogs do Flowchart da Julia
 		dialogsJulia = CreateDialogDictionary (dialogs01);
 	}
 
+	//Retorna a frase contida no dictionary do Flowchart Julia
 	public string FindCorrectLine (int commandID)
 	{
 		SayValues values;
