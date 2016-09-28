@@ -14,9 +14,10 @@ public class ViewManager : MonoBehaviour
 	private int totalMessages;
 	//private float scrollSpeed = 2f;
 
-	List<GameObject> allMessages = new List<GameObject>();
+	List<GameObject> allMessages = new List<GameObject> ();
 
-	void Awake () {
+	void Awake ()
+	{
 		//Adiciona uma mensagem vazia no início, pois essa mensagem é de dificil vizualização com o scroll
 		PrintSAYMessage ("", null);
 	}
@@ -45,8 +46,6 @@ public class ViewManager : MonoBehaviour
 			layoutEle.flexibleHeight = 1;
 			layoutEle.minHeight = 100;
 
-
-
 			if (allMessages.Count == 0) {
 				msgTxt.rectTransform.anchoredPosition = new Vector2 (0, 0);
 			} else {
@@ -63,6 +62,10 @@ public class ViewManager : MonoBehaviour
 			totalMessages++;
 			allMessages.Add (mensagem);
 		}
+	}
+
+	public void MoveUpChat ()
+	{
 	}
 
 	public void UpdateSayDialog (SayDialog newDialog)

@@ -14,7 +14,6 @@ public class FungusManager : MonoBehaviour
 	private string blockID;
 	private int lastCommandID;
 
-
 	public Block CurrentBlock {
 		get {
 			return currentBlock;
@@ -22,18 +21,6 @@ public class FungusManager : MonoBehaviour
 		protected set {
 			currentBlock = value;
 		}
-	}
-
-	//IDs dos comandos que já foram executados
-	List<SaveValues> savedID = new List<SaveValues> ();
-
-	void SaveOrder (string block, int command)
-	{
-		SaveValues save = new SaveValues ();
-		save.block = block;
-		save.command = command;
-		save.flowchart = 0;
-		savedID.Add (save);
 	}
 
 	void Awake ()
@@ -46,8 +33,7 @@ public class FungusManager : MonoBehaviour
 		blockID = currentFlowchart.GetStringVariable ("Block_ID");
 		currentBlock = currentFlowchart.FindBlock (blockID);
 		lastCommandID = currentBlock.commandList [0].itemId;
-		SaveOrder (blockID, lastCommandID);
-
+		SaveGame.SaveOrder (SaveGame.JuliaExecutedCommands, lastCommandID);
 	}
 
 	void Update ()
@@ -67,21 +53,9 @@ public class FungusManager : MonoBehaviour
 			//Verifica se é um Say
 			if (say != null) {
 				//Pega o Character referente ao Say
-				sendMessageClass.SendSayMessage(CurrentBlock,say.character);
+				sendMessageClass.SendSayMessage (CurrentBlock, say.character);
 			}
-			SaveOrder (blockID, lastCommandID);
+			SaveGame.SaveOrder (SaveGame.JuliaExecutedCommands, lastCommandID);
 		}
 	}
-
-
-}
-
-//Classe para usar com Dictionary para guardar valores (frase e character) de cada SayDialog
-class SaveValues
-{
-	public int flowchart { get; set; }
-
-	public string block { get; set; }
-
-	public int command { get; set; }
 }
