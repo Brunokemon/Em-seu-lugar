@@ -18,12 +18,12 @@ public class SaveGame : MonoBehaviour
 	// Use this for initialization
 	void Start ()
 	{
-	
+		//Faz load de Save já existente caso tenha
 	}
 	
 	// Update is called once per frame
 	void Update ()
 	{
-	
+		//Dado que esta sendo feito ja no FungusManager podemos colocar ja a funcao de salvar automaticamente aqui, assim fica desvinculado do FungusManager e salvar fica independete aqui
 	}
 }
