@@ -143,6 +143,7 @@
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/TreeEditor/Editor/UnityEditor.TreeEditor.dll</HintPath>
  </Reference>
  <Reference Include="MoonSharp.Interpreter">
+<<<<<<< HEAD
  <HintPath>/Users/thaisweiller/Documents/projects/Em-seu-lugar/Unity Project/Assets/Fungus/Thirdparty/FungusLua/Thirdparty/Moonsharp/MoonSharp.Interpreter.dll</HintPath>
  </Reference>
  <Reference Include="MoonSharp.RemoteDebugger">
@@ -150,12 +151,32 @@
  </Reference>
  <Reference Include="Editor.ReorderableList">
  <HintPath>/Users/thaisweiller/Documents/projects/Em-seu-lugar/Unity Project/Assets/Fungus/Thirdparty/Reorderable List Field/Editor/Editor.ReorderableList.dll</HintPath>
+=======
+ <HintPath>C:/Users/bruno_000/Desktop/Unity/Em-seu-lugar/Unity Project/Assets/Fungus/Thirdparty/FungusLua/Thirdparty/Moonsharp/MoonSharp.Interpreter.dll</HintPath>
+ </Reference>
+ <Reference Include="MoonSharp.RemoteDebugger">
+ <HintPath>C:/Users/bruno_000/Desktop/Unity/Em-seu-lugar/Unity Project/Assets/Fungus/Thirdparty/FungusLua/Thirdparty/Moonsharp/MoonSharp.RemoteDebugger.dll</HintPath>
+ </Reference>
+ <Reference Include="Editor.ReorderableList">
+ <HintPath>C:/Users/bruno_000/Desktop/Unity/Em-seu-lugar/Unity Project/Assets/Fungus/Thirdparty/Reorderable List Field/Editor/Editor.ReorderableList.dll</HintPath>
+>>>>>>> Matheus_Branch
  </Reference>
  <Reference Include="UnityEditor.Graphs">
  <HintPath>/Applications/Unity/Unity.app/Contents/Managed/UnityEditor.Graphs.dll</HintPath>
  </Reference>
+<<<<<<< HEAD
  <Reference Include="UnityEditor.OSXStandalone.Extensions">
  <HintPath>/Applications/Unity/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll</HintPath>
+=======
+ <Reference Include="UnityEditor.LinuxStandalone.Extensions">
+ <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/UnityEditor.LinuxStandalone.Extensions.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.WindowsStandalone.Extensions">
+ <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/windowsstandalonesupport/UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
+>>>>>>> Matheus_Branch
+ </Reference>
+ <Reference Include="UnityEditor.OSXStandalone.Extensions">
+ <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll</HintPath>
  </Reference>
   </ItemGroup>
   <ItemGroup>

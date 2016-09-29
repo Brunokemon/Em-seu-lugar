@@ -3,35 +3,29 @@ using System.Collections;
 using System.Collections.Generic;
 using Fungus;
 
-[RequireComponent (typeof(TextReader))]
-[RequireComponent (typeof(ViewManager))]
+[RequireComponent (typeof(SendMessage))]
 public class FungusManager : MonoBehaviour
 {
-	private TextReader TextReader;
-	private ViewManager viewManager;
+	private SendMessage sendMessageClass;
 
 	public Flowchart currentFlowchart;
 	private Block currentBlock;
 
-	public string blockID;
-	public int lastCommandID;
+	private string blockID;
+	private int lastCommandID;
 
-	//IDs dos comandos que já foram executados
-	List<SaveValues> savedID = new List<SaveValues> ();
-
-	void SaveOrder (string block, int command)
-	{
-		SaveValues save = new SaveValues ();
-		save.block = block;
-		save.command = command;
-		save.flowchart = 0;
-		savedID.Add (save);
+	public Block CurrentBlock {
+		get {
+			return currentBlock;
+		}
+		protected set {
+			currentBlock = value;
+		}
 	}
 
 	void Awake ()
 	{
-		TextReader = gameObject.GetComponent<TextReader> ();
-		viewManager = gameObject.GetComponent<ViewManager> ();
+		sendMessageClass = gameObject.GetComponent<SendMessage> ();
 	}
 
 	void Start ()
@@ -39,20 +33,15 @@ public class FungusManager : MonoBehaviour
 		blockID = currentFlowchart.GetStringVariable ("Block_ID");
 		currentBlock = currentFlowchart.FindBlock (blockID);
 		lastCommandID = currentBlock.commandList [0].itemId;
-		SaveOrder (blockID, lastCommandID);
-
+		SaveGame.SaveOrder (SaveGame.JuliaExecutedCommands, lastCommandID);
 	}
 
 	void Update ()
 	{
 		//Check if block has changed update variables and PrintMenuMessage
 		if (blockID != currentFlowchart.GetStringVariable ("Block_ID")) {
-
 			blockID = currentFlowchart.GetStringVariable ("Block_ID");
-			currentBlock = currentFlowchart.GetExecutingBlocks () [0];
-
-			//change all say's wait for click to false
-			print ("novo bloco: " + blockID);
+			CurrentBlock = currentFlowchart.GetExecutingBlocks () [0];
 		}
 
 		//if commandID has changed printSayMessage and update variables
@@ -64,25 +53,9 @@ public class FungusManager : MonoBehaviour
 			//Verifica se é um Say
 			if (say != null) {
 				//Pega o Character referente ao Say
-				SendSAYMessage(currentBlock,say.character);
+				sendMessageClass.SendSayMessage (CurrentBlock, say.character);
 			}
-			SaveOrder (blockID, lastCommandID);
+			SaveGame.SaveOrder (SaveGame.JuliaExecutedCommands, lastCommandID);
 		}
 	}
-
-	void SendSAYMessage (Block block, Character character)
-	{
-		string line = TextReader.FindCorrectLine (block.activeCommand.itemId);
-		viewManager.PrintSAYMessage (line, character);
-	}
-}
-
-//Classe para usar com Dictionary para guardar valores (frase e character) de cada SayDialog
-class SaveValues
-{
-	public int flowchart { get; set; }
-
-	public string block { get; set; }
-
-	public int command { get; set; }
 }

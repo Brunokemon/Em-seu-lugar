@@ -227,7 +227,10 @@
      <Compile Include="Assets\Fungus\iTween\Scripts\Commands\StopTweens.cs" />
      <Compile Include="Assets\Fungus\iTween\Scripts\Commands\iTweenCommand.cs" />
      <Compile Include="Assets\FungusExamples\FungusLua\Bindings\CustomScript.cs" />
+     <Compile Include="Assets\Scripts\DictionaryClasses.cs" />
      <Compile Include="Assets\Scripts\FungusManager.cs" />
+     <Compile Include="Assets\Scripts\SaveGame.cs" />
+     <Compile Include="Assets\Scripts\SendMessage.cs" />
      <Compile Include="Assets\Scripts\TextReader.cs" />
      <Compile Include="Assets\Scripts\ViewManager.cs" />
      <None Include="Assets\Fungus\Thirdparty\FungusLua\Thirdparty\JSON\readme.txt" />
@@ -263,10 +266,17 @@
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
  <Reference Include="MoonSharp.Interpreter">
+<<<<<<< HEAD
  <HintPath>/Users/thaisweiller/Documents/projects/Em-seu-lugar/Unity Project/Assets/Fungus/Thirdparty/FungusLua/Thirdparty/Moonsharp/MoonSharp.Interpreter.dll</HintPath>
  </Reference>
  <Reference Include="MoonSharp.RemoteDebugger">
  <HintPath>/Users/thaisweiller/Documents/projects/Em-seu-lugar/Unity Project/Assets/Fungus/Thirdparty/FungusLua/Thirdparty/Moonsharp/MoonSharp.RemoteDebugger.dll</HintPath>
+=======
+ <HintPath>C:/Users/bruno_000/Desktop/Unity/Em-seu-lugar/Unity Project/Assets/Fungus/Thirdparty/FungusLua/Thirdparty/Moonsharp/MoonSharp.Interpreter.dll</HintPath>
+ </Reference>
+ <Reference Include="MoonSharp.RemoteDebugger">
+ <HintPath>C:/Users/bruno_000/Desktop/Unity/Em-seu-lugar/Unity Project/Assets/Fungus/Thirdparty/FungusLua/Thirdparty/Moonsharp/MoonSharp.RemoteDebugger.dll</HintPath>
+>>>>>>> Matheus_Branch
  </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

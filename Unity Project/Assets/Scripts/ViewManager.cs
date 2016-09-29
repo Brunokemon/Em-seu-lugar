@@ -12,33 +12,23 @@ public class ViewManager : MonoBehaviour
 	public Font msgFont;
 
 	private int totalMessages;
-	private float scrollSpeed = 2f;
+	//private float scrollSpeed = 2f;
 
-	List<GameObject> allMessages = new List<GameObject>();
+	List<GameObject> allMessages = new List<GameObject> ();
 
-	void Awake () {
-		PrintSAYMessage ("                       ", null);
-	}
-	void Update ()
+	void Awake ()
 	{
-		//SCRLL utilizando as setas do teclado
-		if (Input.GetKey(KeyCode.UpArrow)) {
-			foreach (GameObject go in allMessages) {
-				go.transform.Translate (-Vector3.up * scrollSpeed);
-			}
-		}
-		else if (Input.GetKey(KeyCode.DownArrow)) {
-			foreach (GameObject go in allMessages) {
-				go.transform.Translate (Vector3.up * scrollSpeed);
-			}
-		}
+		//Adiciona uma mensagem vazia no início, pois essa mensagem é de dificil vizualização com o scroll
+		PrintSAYMessage ("", null);
 	}
 
 	//Creates a new gameObject inside the current sayDialog with the text sent
 	public void PrintSAYMessage (string text, Character character)
 	{
 		if (text != null) {
-			Transform panel = sayDialog.gameObject.transform.Find ("Panel");
+			Transform julia = sayDialog.gameObject.transform.parent;
+			Transform historyCanvas = julia.gameObject.transform.Find ("HistoryCanvas");
+			Transform panel = historyCanvas.gameObject.transform.Find ("Panel");
 			Transform mask = panel.gameObject.transform.Find ("HistoryMask");
 			Transform grid = mask.gameObject.transform.Find ("Grid");
 			GameObject mensagem = new GameObject ();
@@ -56,8 +46,6 @@ public class ViewManager : MonoBehaviour
 			layoutEle.flexibleHeight = 1;
 			layoutEle.minHeight = 100;
 
-
-
 			if (allMessages.Count == 0) {
 				msgTxt.rectTransform.anchoredPosition = new Vector2 (0, 0);
 			} else {
@@ -74,6 +62,10 @@ public class ViewManager : MonoBehaviour
 			totalMessages++;
 			allMessages.Add (mensagem);
 		}
+	}
+
+	public void MoveUpChat ()
+	{
 	}
 
 	public void UpdateSayDialog (SayDialog newDialog)
