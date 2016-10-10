@@ -6,11 +6,11 @@ public class SaveGame : MonoBehaviour
 {
 
 	//IDs dos comandos que já foram executados
-	public static List<SaveValues> JuliaExecutedCommands = new List<SaveValues> ();
+	public static List<DictionaryClasses.SaveValues> JuliaExecutedCommands = new List<DictionaryClasses.SaveValues> ();
 
-	public static void SaveOrder (List<SaveValues> list, int command)
+	public static void SaveOrder (List<DictionaryClasses.SaveValues> list, int command)
 	{
-		SaveValues save = new SaveValues ();
+		DictionaryClasses.SaveValues save = new DictionaryClasses.SaveValues ();
 		save.command = command;
 		list.Add (save);
 	}
