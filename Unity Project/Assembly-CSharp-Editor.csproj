@@ -6,7 +6,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{AA603A1C-05E4-7717-4CB5-3C02E1413303}</ProjectGuid>
+    <ProjectGuid>{3581A99C-59E9-3D7A-FE33-C8839A045BC3}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp-Editor</AssemblyName>
@@ -137,13 +137,13 @@
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/TreeEditor/Editor/UnityEditor.TreeEditor.dll</HintPath>
  </Reference>
  <Reference Include="MoonSharp.Interpreter">
- <HintPath>C:/Users/bruno_000/Desktop/Unity/Em seu lugar 2.0/Assets/Fungus/Thirdparty/FungusLua/Thirdparty/Moonsharp/MoonSharp.Interpreter.dll</HintPath>
+ <HintPath>C:/Users/mmosc/Documents/Em-seu-lugar/Unity Project/Assets/Fungus/Thirdparty/FungusLua/Thirdparty/Moonsharp/MoonSharp.Interpreter.dll</HintPath>
  </Reference>
  <Reference Include="MoonSharp.RemoteDebugger">
- <HintPath>C:/Users/bruno_000/Desktop/Unity/Em seu lugar 2.0/Assets/Fungus/Thirdparty/FungusLua/Thirdparty/Moonsharp/MoonSharp.RemoteDebugger.dll</HintPath>
+ <HintPath>C:/Users/mmosc/Documents/Em-seu-lugar/Unity Project/Assets/Fungus/Thirdparty/FungusLua/Thirdparty/Moonsharp/MoonSharp.RemoteDebugger.dll</HintPath>
  </Reference>
  <Reference Include="Editor.ReorderableList">
- <HintPath>C:/Users/bruno_000/Desktop/Unity/Em seu lugar 2.0/Assets/Fungus/Thirdparty/Reorderable List Field/Editor/Editor.ReorderableList.dll</HintPath>
+ <HintPath>C:/Users/mmosc/Documents/Em-seu-lugar/Unity Project/Assets/Fungus/Thirdparty/Reorderable List Field/Editor/Editor.ReorderableList.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.Graphs">
  <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEditor.Graphs.dll</HintPath>
@@ -157,19 +157,13 @@
  <Reference Include="UnityEditor.WebGL.Extensions">
  <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll</HintPath>
  </Reference>
- <Reference Include="UnityEditor.LinuxStandalone.Extensions">
- <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/UnityEditor.LinuxStandalone.Extensions.dll</HintPath>
- </Reference>
  <Reference Include="UnityEditor.WindowsStandalone.Extensions">
  <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/windowsstandalonesupport/UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
- </Reference>
- <Reference Include="UnityEditor.OSXStandalone.Extensions">
- <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll</HintPath>
  </Reference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp.csproj">
-      <Project>{AD1C7873-C810-F3D0-3CAA-57E7B3202457}</Project>      <Name>Assembly-CSharp</Name>    </ProjectReference>
+      <Project>{BDBCE7D3-139D-3EDB-816D-FB1D73476D25}</Project>      <Name>Assembly-CSharp</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

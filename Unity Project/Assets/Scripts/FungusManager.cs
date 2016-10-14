@@ -16,6 +16,8 @@ public class FungusManager : MonoBehaviour
 	private string blockName;
 	private int commandID;
 
+	float messageTimer = 0f;
+
 	void Start ()
 	{
 		viewManager = gameObject.GetComponent<ViewManager> ();
@@ -33,10 +35,13 @@ public class FungusManager : MonoBehaviour
 
 	void Update ()
 	{
-		//Check if block has changed update variables and PrintMenuMessage
-		if (blockName != JuliaFlowchart.GetExecutingBlocks () [0].blockName) {
-			blockName = JuliaFlowchart.GetExecutingBlocks () [0].blockName;
-			currentBlock = JuliaFlowchart.FindBlock (blockName);
+		//Check if block has changed update variables
+		if (JuliaFlowchart.GetExecutingBlocks() != null) {
+			if (blockName != JuliaFlowchart.GetExecutingBlocks () [0].blockName) {
+				blockName = JuliaFlowchart.GetExecutingBlocks () [0].blockName;
+				currentBlock = JuliaFlowchart.FindBlock (blockName);
+				messageTimer = 0f;
+			}
 		}
 
 		//if commandID has changed printSayMessage from last command and update variables
@@ -45,7 +50,8 @@ public class FungusManager : MonoBehaviour
 			//Mostra o comando anterior para dar tempo de o SayDialog do Player digitar antes de mostrar a mensagem no Histórico do Chat
 			if (textReader.dialogsJulia.ContainsKey (commandID)) {
 				string phrase = textReader.FindPhrase (JuliaFlowchart, commandID);
-				viewManager.PrintMessage (phrase, textReader.dialogsJulia [commandID].character);	
+				messageTimer += phrase.Length * 0.08f;
+				StartCoroutine (CallSayMessageWithDelay(phrase,textReader.dialogsJulia[commandID].character, messageTimer));
 			}
 
 			commandID = currentBlock.activeCommand.itemId;
@@ -62,5 +68,15 @@ public class FungusManager : MonoBehaviour
 
 			//SaveGame.SaveOrder (SaveGame.JuliaExecutedCommands, commandID);
 		}
+	}
+
+	IEnumerator CallSayMessageWithDelay (string text, string character, float delay){
+		//o Character está vindo com um character "invisivel" mais. Devemos remover a ultima letra para garantir que os nomes estejam corretos
+		string correctName = character.Substring(0,character.Length -1);
+
+		if (correctName.ToUpper() != "PLAYER") {
+			yield return new WaitForSeconds (delay);
+		}
+		viewManager.PrintMessage (text, correctName);
 	}
 }

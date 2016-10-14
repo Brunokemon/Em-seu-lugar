@@ -27,9 +27,6 @@ public class ViewManager : MonoBehaviour
 			PrintAudioMessage (audioFile, character);
 			break;
 		default:
-			if (character == "Player") {
-				//WaitWhile()
-			}
 			PrintTextMessage (sayMessage, character);
 			break;
 		}
@@ -59,38 +56,23 @@ public class ViewManager : MonoBehaviour
 	//Creates a new gameObject inside the current sayDialog with the text sent
 	public void PrintTextMessage (string text, string character)
 	{
-		if (character != null && character == "Player") {
-			GameObject message = Instantiate (Resources.Load ("Prefabs/" + "PlayerMessagePrefab") as GameObject);
-			message.transform.SetParent (this.grid, false);
+		if (character != null) {
+			if (character.ToUpper() == "PLAYER") {
+				GameObject message = Instantiate (Resources.Load ("Prefabs/" + "PlayerMessagePrefab") as GameObject);
+				message.transform.SetParent (this.grid, false);
 
-			Text messageText = message.gameObject.GetComponent<Text> ();
-			//messageText.font = messageFont;
-			messageText.text = text;
-		} else {
-			GameObject message = Instantiate (Resources.Load ("Prefabs/" + "NPCMessagePrefab") as GameObject);
-			message.transform.SetParent (this.grid, false);
+				Text messageText = message.gameObject.GetComponent<Text> ();
+				//messageText.font = messageFont;
+				messageText.text = text;
+			} else {
+				GameObject message = Instantiate (Resources.Load ("Prefabs/" + "NPCMessagePrefab") as GameObject);
+				message.transform.SetParent (this.grid, false);
 
-			Text messageText = message.gameObject.GetComponent<Text> ();
-			//messageText.font = messageFont;
-			messageText.text = text;
+				Text messageText = message.gameObject.GetComponent<Text> ();
+				//messageText.font = messageFont;
+				messageText.text = text;
+			}
 		}
-
-		/*Tentando nesta parte comentada fazer com prefabs mais complexos (PlayerMessagePrefabBetter e NPCMessagePrefabBetter) 
-		para mensagem ficar com espaço do lado para diferenciar mensagens do player e do NPC
-		if (character != null && character.nameText == "Player") {
-			GameObject message = Instantiate (Resources.Load ("Prefabs/" + "PlayerMessagePrefabBetter") as GameObject);
-			message.transform.parent = this.messageParent;
-
-			message.gameObject.transform.FindChild ("Message").GetComponent<Text> ().font = messageFont;
-			message.gameObject.transform.FindChild ("Message").GetComponent<Text> ().text = text;
-		} else {
-			GameObject message = Instantiate (Resources.Load ("Prefabs/" + "NPCMessagePrefabBetter") as GameObject);
-			message.transform.parent = this.messageParent;
-
-
-			message.gameObject.transform.FindChild ("Message").GetComponent<Text> ().font = messageFont;
-			message.gameObject.transform.FindChild ("Message").GetComponent<Text> ().text = text;
-		}*/
 	}
 
 	//Move o chat para a mensagem mais recente aparecer, abaixando o scroller

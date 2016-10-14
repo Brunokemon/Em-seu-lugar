@@ -6,7 +6,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{AD1C7873-C810-F3D0-3CAA-57E7B3202457}</ProjectGuid>
+    <ProjectGuid>{BDBCE7D3-139D-3EDB-816D-FB1D73476D25}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -258,10 +258,10 @@
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
  </Reference>
  <Reference Include="MoonSharp.Interpreter">
- <HintPath>C:/Users/bruno_000/Desktop/Unity/Em seu lugar 2.0/Assets/Fungus/Thirdparty/FungusLua/Thirdparty/Moonsharp/MoonSharp.Interpreter.dll</HintPath>
+ <HintPath>C:/Users/mmosc/Documents/Em-seu-lugar/Unity Project/Assets/Fungus/Thirdparty/FungusLua/Thirdparty/Moonsharp/MoonSharp.Interpreter.dll</HintPath>
  </Reference>
  <Reference Include="MoonSharp.RemoteDebugger">
- <HintPath>C:/Users/bruno_000/Desktop/Unity/Em seu lugar 2.0/Assets/Fungus/Thirdparty/FungusLua/Thirdparty/Moonsharp/MoonSharp.RemoteDebugger.dll</HintPath>
+ <HintPath>C:/Users/mmosc/Documents/Em-seu-lugar/Unity Project/Assets/Fungus/Thirdparty/FungusLua/Thirdparty/Moonsharp/MoonSharp.RemoteDebugger.dll</HintPath>
  </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
