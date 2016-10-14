@@ -18,6 +18,11 @@ public class FungusManager : MonoBehaviour
 
 	float messageTimer = 0f;
 
+	public GameObject isTypingIcon;
+
+	//Lista para dizer quantas mensagens ainda estão sendo enviadas
+	List<float> runningCorroutines = new List<float>();
+
 	void Start ()
 	{
 		viewManager = gameObject.GetComponent<ViewManager> ();
@@ -74,9 +79,18 @@ public class FungusManager : MonoBehaviour
 		//o Character está vindo com um character "invisivel" mais. Devemos remover a ultima letra para garantir que os nomes estejam corretos
 		string correctName = character.Substring(0,character.Length -1);
 
+		runningCorroutines.Add (delay);
+
 		if (correctName.ToUpper() != "PLAYER") {
+			isTypingIcon.SetActive (true);	
 			yield return new WaitForSeconds (delay);
+
+			//Se está é a ultima corroitine na lista, então desativar o IsTyping
+			if (runningCorroutines.Count == 1) {
+				isTypingIcon.SetActive (false);
+			}
 		}
 		viewManager.PrintMessage (text, correctName);
+		runningCorroutines.Remove (delay);
 	}
 }
