@@ -57,7 +57,7 @@ public class ViewManager : MonoBehaviour
 	public void PrintTextMessage (string text, string character)
 	{
 		if (character != null) {
-			if (character.ToUpper() == "PLAYER") {
+			if (character.ToUpper () == "PLAYER") {
 				GameObject message = Instantiate (Resources.Load ("Prefabs/" + "PlayerMessagePrefab") as GameObject);
 				message.transform.SetParent (this.grid, false);
 
@@ -79,7 +79,7 @@ public class ViewManager : MonoBehaviour
 	//(como o facebook faz no messenger ao receber uma nova mesangem)
 	private void MoveUpChat ()
 	{
-		historyMask.GetComponent<ScrollRect> ().verticalNormalizedPosition = -0.1f;
+		historyMask.GetComponent<ScrollRect> ().verticalNormalizedPosition = 0.0f;
 	}
 
 	//Para mostrar animacao para informar que NPC esta digitando
