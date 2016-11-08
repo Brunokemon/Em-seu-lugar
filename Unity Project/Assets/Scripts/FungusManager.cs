@@ -21,7 +21,7 @@ public class FungusManager : MonoBehaviour
 	public GameObject isTypingIcon;
 
 	//Lista para dizer quantas mensagens ainda estão sendo enviadas
-	List<float> runningCorroutines = new List<float>();
+	List<float> runningCorroutines = new List<float> ();
 
 	void Start ()
 	{
@@ -41,7 +41,7 @@ public class FungusManager : MonoBehaviour
 	void Update ()
 	{
 		//Check if block has changed update variables
-		if (JuliaFlowchart.GetExecutingBlocks() != null) {
+		if (JuliaFlowchart.GetExecutingBlocks () != null) {
 			if (blockName != JuliaFlowchart.GetExecutingBlocks () [0].blockName) {
 				blockName = JuliaFlowchart.GetExecutingBlocks () [0].blockName;
 				currentBlock = JuliaFlowchart.FindBlock (blockName);
@@ -56,32 +56,40 @@ public class FungusManager : MonoBehaviour
 			if (textReader.dialogsJulia.ContainsKey (commandID)) {
 				string phrase = textReader.FindPhrase (JuliaFlowchart, commandID);
 				messageTimer += phrase.Length * 0.08f;
-				StartCoroutine (CallSayMessageWithDelay(phrase,textReader.dialogsJulia[commandID].character, messageTimer));
+				StartCoroutine (CallSayMessageWithDelay (phrase, textReader.dialogsJulia [commandID].character, messageTimer));
 			}
 
 			commandID = currentBlock.activeCommand.itemId;
 
-			/*
-			//Mostra o comando atual
-			Say say = currentBlock.activeCommand as Say;
+
+			//Pega o comando atual
+			Command command = currentBlock.activeCommand;
 			//Verifica se é um Say
-			if (say != null) {
-				string phrase = textReader.FindPhrase (JuliaFlowchart, commandID);
-				viewManager.PrintMessage (phrase, say.character.name);
+			if (command.GetType ().Name == "Say") {
+				Say commandSay = command as Say;
+				//string phrase = textReader.FindPhrase (JuliaFlowchart, commandID);
+				//viewManager.PrintMessage (phrase, (Say)say.character.name);
 			}
-			*/
+
+			//Verifica se é um Wait
+			if (command.GetType ().Name == "Wait") {
+				Wait commandWait = command as Wait;
+				float duration = commandWait._duration;
+			}
+
 
 			//SaveGame.SaveOrder (SaveGame.JuliaExecutedCommands, commandID);
 		}
 	}
 
-	IEnumerator CallSayMessageWithDelay (string text, string character, float delay){
+	IEnumerator CallSayMessageWithDelay (string text, string character, float delay)
+	{
 		//o Character está vindo com um character "invisivel" mais. Devemos remover a ultima letra para garantir que os nomes estejam corretos
-		string correctName = character.Substring(0,character.Length -1);
+		string correctName = character.Substring (0, character.Length - 1);
 
 		runningCorroutines.Add (delay);
 
-		if (correctName.ToUpper() != "PLAYER") {
+		if (correctName.ToUpper () != "PLAYER") {
 			isTypingIcon.SetActive (true);	
 			yield return new WaitForSeconds (delay);
 
