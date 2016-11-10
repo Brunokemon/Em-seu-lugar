@@ -6,26 +6,13 @@ public class SaveGame : MonoBehaviour
 {
 
 	//IDs dos comandos que já foram executados
-
-	//Modelo para todos os flowcharts diferentes
-	//public static List<DictionaryClasses.SaveValues> NPCExecutedCommands = new List<DictionaryClasses.SaveValues> ();
-
 	public static List<DictionaryClasses.SaveValues> JuliaExecutedCommands = new List<DictionaryClasses.SaveValues> ();
 
-	public static void SaveOrder (string flowchartName, int command)
+	public static void SaveOrder (List<DictionaryClasses.SaveValues> list, int command)
 	{
 		DictionaryClasses.SaveValues save = new DictionaryClasses.SaveValues ();
 		save.command = command;
-		FlowchartSaveList (flowchartName).Add (save);
-	}
-
-	//Retorna a lista da flowchart com o nome dado
-	private static List<DictionaryClasses.SaveValues> FlowchartSaveList (string flowchartName)
-	{
-		switch (flowchartName) {
-		case "JuliaFlowchart":
-			return JuliaExecutedCommands;
-		}
+		list.Add (save);
 	}
 
 	// Use this for initialization

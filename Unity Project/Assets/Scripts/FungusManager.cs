@@ -10,12 +10,9 @@ public class FungusManager : MonoBehaviour
 	private ViewManager viewManager;
 	private TextReader textReader;
 
-	//Modelo para ser usado em cada flowchart diferente
-	//public Flowchart OtherNPCFlowchart;
 	public Flowchart JuliaFlowchart;
-
-	private Flowchart currentFlowchart;
 	private Block currentBlock;
+
 	private string blockName;
 	private int commandID;
 
@@ -32,10 +29,10 @@ public class FungusManager : MonoBehaviour
 		textReader = gameObject.GetComponent<TextReader> ();
 
 		//Este comando pega o nome do bloco em execucao
-		blockName = currentFlowchart.GetExecutingBlocks () [0].blockName;
+		blockName = JuliaFlowchart.GetExecutingBlocks () [0].blockName;
 
 		//Encontra o block
-		currentBlock = currentFlowchart.FindBlock (blockName);
+		currentBlock = JuliaFlowchart.FindBlock (blockName);
 		commandID = currentBlock.commandList [0].itemId;
 
 		//SaveGame.SaveOrder (SaveGame.JuliaExecutedCommands, commandID);
@@ -43,12 +40,11 @@ public class FungusManager : MonoBehaviour
 
 	void Update ()
 	{
-		this.ActiveFlowchart ();		
 		//Check if block has changed update variables
-		if (currentFlowchart.GetExecutingBlocks () != null) {
-			if (blockName != currentFlowchart.GetExecutingBlocks () [0].blockName) {
-				blockName = currentFlowchart.GetExecutingBlocks () [0].blockName;
-				currentBlock = currentFlowchart.FindBlock (blockName);
+		if (JuliaFlowchart.GetExecutingBlocks () != null) {
+			if (blockName != JuliaFlowchart.GetExecutingBlocks () [0].blockName) {
+				blockName = JuliaFlowchart.GetExecutingBlocks () [0].blockName;
+				currentBlock = JuliaFlowchart.FindBlock (blockName);
 				messageTimer = 0f;
 			}
 		}
@@ -58,14 +54,13 @@ public class FungusManager : MonoBehaviour
 
 			//Mostra o comando anterior para dar tempo de o SayDialog do Player digitar antes de mostrar a mensagem no Histórico do Chat
 			if (textReader.dialogsJulia.ContainsKey (commandID)) {
-				string phrase = textReader.FindPhrase (currentFlowchart, commandID);
+				string phrase = textReader.FindPhrase (JuliaFlowchart, commandID);
 				messageTimer += phrase.Length * 0.08f;
 				StartCoroutine (CallSayMessageWithDelay (phrase, textReader.dialogsJulia [commandID].character, messageTimer));
 			}
 
 			commandID = currentBlock.activeCommand.itemId;
 
-			/*
 
 			//Pega o comando atual
 			Command command = currentBlock.activeCommand;
@@ -79,13 +74,11 @@ public class FungusManager : MonoBehaviour
 			//Verifica se é um Wait
 			if (command.GetType ().Name == "Wait") {
 				Wait commandWait = command as Wait;
-				//duracao do Wait Command
 				float duration = commandWait._duration;
 			}
 
-			SaveGame.SaveOrder (currentFlowchart.name, commandID);
 
-			*/
+			//SaveGame.SaveOrder (SaveGame.JuliaExecutedCommands, commandID);
 		}
 	}
 
@@ -107,15 +100,5 @@ public class FungusManager : MonoBehaviour
 		}
 		viewManager.PrintMessage (text, correctName);
 		runningCorroutines.Remove (delay);
-	}
-
-	void ActiveFlowchart ()
-	{
-		//Modelo para ser usado em todos os flowcharts
-		//if (OtherNPCFlowchart.isActiveAndEnabled)
-		//	currentFlowchart = OtherNPCFlowchart;
-
-		if (JuliaFlowchart.isActiveAndEnabled)
-			currentFlowchart = JuliaFlowchart;
 	}
 }
