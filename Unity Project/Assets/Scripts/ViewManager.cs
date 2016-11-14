@@ -74,6 +74,7 @@ public class ViewManager : MonoBehaviour
 	private void MoveUpChat ()
 	{
 		panelScroll.GetComponent<ScrollRect> ().verticalNormalizedPosition = 0.0f;
+		Canvas.ForceUpdateCanvases ();
 	}
 
 	//Para mostrar animacao para informar que NPC esta digitando
