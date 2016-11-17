@@ -7,10 +7,10 @@ using System.Linq;
 
 public class ViewManager : MonoBehaviour
 {
-	//Grid onde sao mostradas as mensagens do chat
-	//Usado nas funcoes PrintAudioMessage, PrintPictureMessage e PrintTextMessage
-	public Transform grid;
-	public Transform historyMask;
+	//Panel que contem o scroll
+	public Transform panelScroll;
+	//Panel onde são colocadas as mensagens do chat
+	public Transform panelMessages;
 
 	//Recebe mensagem do Say e verifica se eh uma mensagem de texto, imagem ou audio e chama a funcao apropriada
 	public void PrintMessage (string sayMessage, string character)
@@ -36,41 +36,35 @@ public class ViewManager : MonoBehaviour
 
 	//Ainda falta terminar a funcao
 	//Cria uma mensagem de audio
-	public void PrintAudioMessage (string audioFile, string character)
+	private void PrintAudioMessage (string audioFile, string character)
 	{
 		GameObject message = Instantiate (Resources.Load ("Prefabs/" + "AudioPrefab") as GameObject);
-		message.transform.parent = grid;
+		message.transform.parent = panelMessages;
 		message.GetComponent<AudioSource> ().clip = Resources.Load<AudioClip> ("Audios/" + audioFile);
 	}
 
 	//Ainda falta terminar a funcao
 	//Cria uma mensagem de imagem
-	public void  PrintPictureMessage (string pictureFile, string character)
+	private void  PrintPictureMessage (string pictureFile, string character)
 	{
 		GameObject message = Instantiate (Resources.Load ("Prefabs/" + "PicturePrefab") as GameObject);
-		message.transform.parent = grid;
+		message.transform.parent = panelMessages;
 		message.GetComponent<SpriteRenderer> ().sprite = Resources.Load<Sprite> ("Pictures/" + pictureFile);
 	}
 
 	//Cria a mensagem de texto
 	//Creates a new gameObject inside the current sayDialog with the text sent
-	public void PrintTextMessage (string text, string character)
+	private void PrintTextMessage (string text, string character)
 	{
 		if (character != null) {
-			if (character.ToUpper() == "PLAYER") {
+			if (character.ToUpper () == "PLAYER") {
 				GameObject message = Instantiate (Resources.Load ("Prefabs/" + "PlayerMessagePrefab") as GameObject);
-				message.transform.SetParent (this.grid, false);
-
-				Text messageText = message.gameObject.GetComponent<Text> ();
-				//messageText.font = messageFont;
-				messageText.text = text;
+				message.transform.SetParent (this.panelMessages, false);
+				message.gameObject.transform.GetComponentInChildren<Text> ().text = text;
 			} else {
 				GameObject message = Instantiate (Resources.Load ("Prefabs/" + "NPCMessagePrefab") as GameObject);
-				message.transform.SetParent (this.grid, false);
-
-				Text messageText = message.gameObject.GetComponent<Text> ();
-				//messageText.font = messageFont;
-				messageText.text = text;
+				message.transform.SetParent (this.panelMessages, false);
+				message.gameObject.transform.GetComponentInChildren<Text> ().text = text;
 			}
 		}
 	}
@@ -79,7 +73,8 @@ public class ViewManager : MonoBehaviour
 	//(como o facebook faz no messenger ao receber uma nova mesangem)
 	private void MoveUpChat ()
 	{
-		historyMask.GetComponent<ScrollRect> ().verticalNormalizedPosition = -0.1f;
+		panelScroll.GetComponent<ScrollRect> ().verticalNormalizedPosition = 0.0f;
+		Canvas.ForceUpdateCanvases ();
 	}
 
 	//Para mostrar animacao para informar que NPC esta digitando
