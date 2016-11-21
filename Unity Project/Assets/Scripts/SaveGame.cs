@@ -1,17 +1,21 @@
 ﻿using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.Serialization.Formatters.Binary;
+using System.IO;
 
+//Proxima versao mudar nome para SaveLoad
+//Duas opcoes possiveis para classe:
+//1-deixar a classe static e tira heranca do MonoBehaviour e chama a funcao de salvar em cada operacao que considerar que deve salvar
+//2-deixar como herdeira da classe MonoBehaviour e instancia em um objeto para com as funcoes Start e Update fazer automaticamente o Load e o Save
 public class SaveGame : MonoBehaviour
 {
-
-	//IDs dos comandos que já foram executados
-
 	//Modelo para todos os flowcharts diferentes
 	//public static List<DictionaryClasses.SaveValues> NPCExecutedCommands = new List<DictionaryClasses.SaveValues> ();
 
 	public static List<DictionaryClasses.SaveValues> JuliaExecutedCommands = new List<DictionaryClasses.SaveValues> ();
 
+	//Salva ordem e ID's dos comandos executados
 	public static void SaveOrder (string flowchartName, int command)
 	{
 		DictionaryClasses.SaveValues save = new DictionaryClasses.SaveValues ();
@@ -30,15 +34,14 @@ public class SaveGame : MonoBehaviour
 		}
 	}
 
-	// Use this for initialization
 	void Start ()
 	{
-		//Faz load de Save já existente caso tenha
+		//Funcao que verifica se existe um arquivo de save no local onde esta sendo rodado o jogo
+		//Funcao que faz load de Save caso exista
 	}
-	
-	// Update is called once per frame
+
 	void Update ()
 	{
-		//Dado que esta sendo feito ja no FungusManager podemos colocar ja a funcao de salvar automaticamente aqui, assim fica desvinculado do FungusManager e salvar fica independete aqui
+		//Funcao que faz automaticamente o save
 	}
 }
