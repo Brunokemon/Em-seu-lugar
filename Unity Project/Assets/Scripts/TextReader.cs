@@ -19,6 +19,8 @@ public class TextReader : MonoBehaviour
 	public TextAsset localizationJulia;
 	public Dictionary<int, DictionaryClasses.SayValues> dialogsJulia = new Dictionary<int, DictionaryClasses.SayValues> ();
 
+	public List<GameObject> Johann;
+
 	void Awake ()
 	{
 		//Modelo
