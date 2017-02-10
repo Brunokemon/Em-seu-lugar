@@ -228,6 +228,7 @@
      <Compile Include="Assets\Fungus\iTween\Scripts\Commands\iTweenCommand.cs" />
      <Compile Include="Assets\Scripts\DictionaryClasses.cs" />
      <Compile Include="Assets\Scripts\FungusManager.cs" />
+     <Compile Include="Assets\Scripts\PanelLayout.cs" />
      <Compile Include="Assets\Scripts\SaveGame.cs" />
      <Compile Include="Assets\Scripts\TextReader.cs" />
      <Compile Include="Assets\Scripts\ViewManager.cs" />
