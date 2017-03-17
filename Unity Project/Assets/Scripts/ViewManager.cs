@@ -57,24 +57,16 @@ public class ViewManager : MonoBehaviour
 	private void PrintTextMessage (string text, string character)
 	{
 		if (character != null) {
-			if (character.ToUpper () == "PLAYER") {
-				GameObject message = Instantiate (Resources.Load ("Prefabs/" + "PlayerMessage") as GameObject);
+			this.panelMessages.GetComponent<PanelLayout> ().AddMessage (character, text);
+			/*if (character.ToUpper () == "PLAYER") {
+				GameObject message = Instantiate (Resources.Load ("Prefabs/" + "PlayerMessagePrefab") as GameObject);
 				message.transform.SetParent (this.panelMessages, false);
 				message.gameObject.transform.GetComponentInChildren<Text> ().text = text;
 			} else {
-
-				bool test = true;
-
-				if (test == true) {
-					GameObject message = Instantiate (Resources.Load ("Prefabs/" + "NPCMessageTest") as GameObject);
-					message.transform.SetParent (this.panelMessages, false);
-					message.transform.FindChild ("NPCMessagePrefab").GetComponentInChildren<Text> ().text = text;
-				} else {
-					GameObject message = Instantiate (Resources.Load ("Prefabs/" + "NPCMessage") as GameObject);
-					message.transform.SetParent (this.panelMessages, false);
-					message.gameObject.transform.GetComponentInChildren<Text> ().text = text;
-				}
-			}
+				GameObject message = Instantiate (Resources.Load ("Prefabs/" + "NPCMessagePrefab") as GameObject);
+				message.transform.SetParent (this.panelMessages, false);
+				message.gameObject.transform.GetComponentInChildren<Text> ().text = text;
+			}*/
 		}
 	}
 
