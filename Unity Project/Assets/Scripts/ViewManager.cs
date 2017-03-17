@@ -58,11 +58,11 @@ public class ViewManager : MonoBehaviour
 	{
 		if (character != null) {
 			if (character.ToUpper () == "PLAYER") {
-				GameObject message = Instantiate (Resources.Load ("Prefabs/" + "PlayerMessagePrefab") as GameObject);
+				GameObject message = Instantiate (Resources.Load ("Prefabs/" + "player") as GameObject);
 				message.transform.SetParent (this.panelMessages, false);
 				message.gameObject.transform.GetComponentInChildren<Text> ().text = text;
 			} else {
-				GameObject message = Instantiate (Resources.Load ("Prefabs/" + "NPCMessagePrefab") as GameObject);
+				GameObject message = Instantiate (Resources.Load ("Prefabs/" + "npc") as GameObject);
 				message.transform.SetParent (this.panelMessages, false);
 				message.gameObject.transform.GetComponentInChildren<Text> ().text = text;
 			}
