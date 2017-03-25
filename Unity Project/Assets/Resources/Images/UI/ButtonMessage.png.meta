@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: e2a80e56e267e81428683f71823e2338
-timeCreated: 1489787055
+guid: 7036214a7275d3a429459a3e2d94a99c
+timeCreated: 1490474018
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName: {}
@@ -39,7 +39,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spriteBorder: {x: 20, y: 12, z: 11, w: 12}
+  spriteBorder: {x: 50, y: 50, z: 50, w: 50}
   spritePixelsToUnits: 100
   alphaUsage: 1
   alphaIsTransparency: 1
@@ -70,7 +70,7 @@ TextureImporter:
     serializedVersion: 2
     sprites: []
     outline: []
-  spritePackingTag: 
+  spritePackingTag: UI_Atlas
   userData: 
   assetBundleName: 
   assetBundleVariant: 
