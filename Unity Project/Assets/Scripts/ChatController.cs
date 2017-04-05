@@ -5,73 +5,67 @@ using UnityEngine.UI;
 
 public class ChatController : MonoBehaviour
 {
-    private static ChatController _instance;
-    public static ChatController Instance
-    {
-        get
-        {
-            if (_instance == null)
-            {
-                _instance = GameObject.FindObjectOfType<ChatController>();
-            }
+	private static ChatController _instance;
 
-            return _instance;
-        }
-    }
+	public static ChatController Instance {
+		get {
+			if (_instance == null) {
+				_instance = GameObject.FindObjectOfType<ChatController> ();
+			}
 
-    public Transform m_Container;
+			return _instance;
+		}
+	}
 
-    public GameObject m_BubbleLeft;
+	public Transform m_Container;
 
-    public GameObject m_BubbleRight;
+	public Text m_InputText;
 
-    public Text m_InputText;
+	private TypewriterEffect m_textEffect;
 
-    private TypewriterEffect m_textEffect;
+	[SerializeField]
+	private VerticalLayoutGroup layoutGroup;
 
-    [SerializeField]
-    private VerticalLayoutGroup layoutGroup;
+	private string message;
 
-    private string message;
+	private void Awake ()
+	{
+		m_textEffect = m_InputText.transform.GetComponent<TypewriterEffect> ();
+	}
 
-    private void Awake()
-    {
-        m_textEffect = m_InputText.transform.GetComponent<TypewriterEffect>();
-    }
+	public void FillInputField (string p_message)
+	{
+		message = p_message;
+		m_InputText.text = p_message;
+		m_textEffect.StartEffect ();
+	}
 
-    public void FillInputField(string p_message)
-    {
-        message = p_message;
-        m_InputText.text = p_message;
-        m_textEffect.StartEffect();
-    }
+	public void AddBubbleLeft (string p_message = "")
+	{
+		GameObject newMessage = Instantiate (Resources.Load ("Prefabs/" + "LeftBubble")) as GameObject;
 
-    public void AddBubbleLeft(string p_message = "")
-    {
-        GameObject newMessage = Instantiate(m_BubbleLeft) as GameObject;
+		newMessage.transform.SetParent (m_Container, false);
+		newMessage.transform.GetComponent<BubbleView> ().SetText (message);
 
-        newMessage.transform.SetParent(m_Container, false);
-        newMessage.transform.GetComponent<BubbleView>().SetText(message);
+		ClearInput ();
+	}
 
-        ClearInput();
-    }
+	public void AddBubbleRight (string p_message = "")
+	{
+		m_textEffect.StopEffect ();
 
-    public void AddBubbleRight(string p_message = "")
-    {
-        m_textEffect.StopEffect();
+		GameObject newMessage = Instantiate (Resources.Load ("Prefabs/" + "RightBubble")) as GameObject;
 
-        GameObject newMessage = Instantiate(m_BubbleRight) as GameObject;
+		newMessage.transform.SetParent (m_Container, false);
+		newMessage.transform.GetComponent<BubbleView> ().SetText (message);
 
-        newMessage.transform.SetParent(m_Container, false);
-        newMessage.transform.GetComponent<BubbleView>().SetText(message);
+		ClearInput ();
+	}
 
-        ClearInput();
-    }
-
-    private void ClearInput()
-    {
-        m_InputText.text = ".";
-        m_InputText.text = "";
-        layoutGroup.CalculateLayoutInputVertical();
-    }
+	private void ClearInput ()
+	{
+		m_InputText.text = ".";
+		m_InputText.text = "";
+		layoutGroup.CalculateLayoutInputVertical ();
+	}
 }
