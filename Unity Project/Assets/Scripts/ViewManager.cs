@@ -76,22 +76,4 @@ public class ViewManager : MonoBehaviour
 		panelScroll.GetComponent<ScrollRect> ().verticalNormalizedPosition = 0.0f;
 		Canvas.ForceUpdateCanvases ();
 	}
-
-	//Para mostrar animacao para informar que NPC esta digitando
-	public void NpcWritingAnswer ()
-	{
-		//Detecta se o command atual eh um Wait
-		//Se for faz o MoveUpChat() e cria um GameObject com a animacao de digitacao na parte inferior do Grid
-		//Quando trocar de command para algo que nao eh Wait destroi o GameObject da animacao para sumir a animacao
-		//Em seguida se chama o PrinSayMessage()
-	}
-
-	//Para mostrar que NPC esta ausente da conversa (quando for colocar real-time)
-	public void NpcAFK ()
-	{
-		//Detecta se o command atual eh um Wait com espera maior que X (a determinar) segundos
-		//Se for cria um GameObject com a animacao de digitacao
-		//Quando trocar de command para algo que nao eh Wait destroi o GameObject da animacao para sumir a animacao
-		//Em seguida se chama o PrinSayMessage()
-	}
 }
