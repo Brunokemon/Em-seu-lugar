@@ -7,10 +7,7 @@ using System.Linq;
 
 public class ViewManager : MonoBehaviour
 {
-	//Panel que contem o scroll
-	public Transform panelScroll;
-	//Panel onde são colocadas as mensagens do chat
-	public Transform panelMessages;
+	public GameObject ChatCanvas;
 
 	//Recebe mensagem do Say e verifica se eh uma mensagem de texto, imagem ou audio e chama a funcao apropriada
 	public void PrintMessage (string sayMessage, string character)
@@ -20,60 +17,27 @@ public class ViewManager : MonoBehaviour
 		switch (type) {
 		case "picture":
 			string pictureFile = sayMessage.Split (" " [0]) [1];
-			PrintPictureMessage (pictureFile, character);
+			//PrintPictureMessage (pictureFile, character);
 			break;
 		case "audio":
 			string audioFile = sayMessage.Split (" " [0]) [1];
-			PrintAudioMessage (audioFile, character);
+			//PrintAudioMessage (audioFile, character);
 			break;
 		default:
 			PrintTextMessage (sayMessage, character);
 			break;
 		}
-
-		MoveUpChat ();
-	}
-
-	//Ainda falta terminar a funcao
-	//Cria uma mensagem de audio
-	private void PrintAudioMessage (string audioFile, string character)
-	{
-		GameObject message = Instantiate (Resources.Load ("Prefabs/" + "AudioPrefab") as GameObject);
-		message.transform.parent = panelMessages;
-		message.GetComponent<AudioSource> ().clip = Resources.Load<AudioClip> ("Audios/" + audioFile);
-	}
-
-	//Ainda falta terminar a funcao
-	//Cria uma mensagem de imagem
-	private void  PrintPictureMessage (string pictureFile, string character)
-	{
-		GameObject message = Instantiate (Resources.Load ("Prefabs/" + "PicturePrefab") as GameObject);
-		message.transform.parent = panelMessages;
-		message.GetComponent<SpriteRenderer> ().sprite = Resources.Load<Sprite> ("Pictures/" + pictureFile);
 	}
 
 	//Cria a mensagem de texto
-	//Creates a new gameObject inside the current sayDialog with the text sent
 	private void PrintTextMessage (string text, string character)
 	{
 		if (character != null) {
 			if (character.ToUpper () == "PLAYER") {
-				GameObject message = Instantiate (Resources.Load ("Prefabs/" + "player") as GameObject);
-				message.transform.SetParent (this.panelMessages, false);
-				message.gameObject.transform.GetComponentInChildren<Text> ().text = text;
+				ChatCanvas.GetComponent<ChatController> ().AddBubbleRight (text);
 			} else {
-				GameObject message = Instantiate (Resources.Load ("Prefabs/" + "npc") as GameObject);
-				message.transform.SetParent (this.panelMessages, false);
-				message.gameObject.transform.GetComponentInChildren<Text> ().text = text;
+				ChatCanvas.GetComponent<ChatController> ().AddBubbleLeft (text);
 			}
 		}
-	}
-
-	//Move o chat para a mensagem mais recente aparecer, abaixando o scroller
-	//(como o facebook faz no messenger ao receber uma nova mesangem)
-	private void MoveUpChat ()
-	{
-		panelScroll.GetComponent<ScrollRect> ().verticalNormalizedPosition = 0.0f;
-		Canvas.ForceUpdateCanvases ();
 	}
 }
