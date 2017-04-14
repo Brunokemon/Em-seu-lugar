@@ -20,6 +20,9 @@ public class ChatController : MonoBehaviour
 	public Text m_InputText;
 	public GameObject m_buttonMenu1;
 	public GameObject m_buttonMenu2;
+	public string p_chosenOption;
+	private string block1;
+	private string block2;
 	private TypewriterEffect m_textEffect;
 
 	[SerializeField]
@@ -58,8 +61,18 @@ public class ChatController : MonoBehaviour
 		GameObject newMessage = Instantiate (Resources.Load ("Prefabs/" + "RightBubble")) as GameObject;
 
 		newMessage.transform.SetParent (m_Container, false);
-		newMessage.transform.GetComponent<BubbleView> ().SetText (message);
+		newMessage.transform.GetComponent<BubbleView> ().SetText (p_message);
 		ClearInput ();
+	}
+
+	public void ClickHandler ()
+	{
+		this.AddBubbleRight (message);
+		if (p_chosenOption == m_buttonMenu1.name) {
+			FungusManager.Instance.ExecuteBlock (block1);
+		} else {
+			FungusManager.Instance.ExecuteBlock (block2);
+		}
 	}
 
 	private void ClearInput ()
@@ -69,11 +82,13 @@ public class ChatController : MonoBehaviour
 		layoutGroup.CalculateLayoutInputVertical ();
 	}
 
-	public void ActivateOptions (string option1, string option2)
+	public void ActivateOptions (string option1, string block1, string option2, string block2)
 	{
 		m_buttonMenu1.SetActive (true);
 		m_buttonMenu2.SetActive (true);
 		m_buttonMenu1.GetComponent<MessageButton> ().Populate (option1);
 		m_buttonMenu2.GetComponent<MessageButton> ().Populate (option2);
+		this.block1 = block1;
+		this.block2 = block2;
 	}
 }

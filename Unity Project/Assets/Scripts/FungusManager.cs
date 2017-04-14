@@ -7,11 +7,22 @@ using Fungus;
 [RequireComponent (typeof(TextReader))]
 public class FungusManager : MonoBehaviour
 {
+
+	private static FungusManager _instance;
+
+	public static FungusManager Instance {
+		get {
+			if (_instance == null) {
+				_instance = GameObject.FindObjectOfType<FungusManager> ();
+			}
+			return _instance;
+		}
+	}
+
 	private ViewManager viewManager;
 	private TextReader textReader;
 
 	public Flowchart flowchart;
-	public GameObject chatController;
 	private Block currentBlock;
 	private string blockName;
 	private int commandID;
@@ -53,10 +64,9 @@ public class FungusManager : MonoBehaviour
 		}
 	}
 
-	public void MenuOptions (string option1, string block1, string option2, string block2)
+	public void ExecuteBlock (string block)
 	{
-		chatController.GetComponent<ChatController> ().ActivateOptions (option1, option2);
-
+		flowchart.ExecuteBlock (block);
 	}
 
 	private IEnumerator CallSayMessageWithDelay (string text, string character, float delay)

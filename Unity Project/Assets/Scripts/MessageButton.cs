@@ -25,5 +25,6 @@ public class MessageButton : MonoBehaviour
 		if (m_Message == "")
 			m_Message = msgText.text;
 		ChatController.Instance.FillInputField (m_Message);
+		ChatController.Instance.p_chosenOption = this.name;
 	}
 }
