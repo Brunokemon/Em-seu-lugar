@@ -32,6 +32,7 @@ public class ChatController : MonoBehaviour
 
 	private void Awake ()
 	{
+		GameObject.Find ("InputField").GetComponent<Button> ().interactable = false;
 		m_textEffect = m_InputText.transform.GetComponent<TypewriterEffect> ();
 	}
 
@@ -67,6 +68,7 @@ public class ChatController : MonoBehaviour
 
 	public void ClickHandler ()
 	{
+		GameObject.Find ("InputField").GetComponent<Button> ().interactable = false;
 		this.AddBubbleRight (message);
 		if (p_chosenOption == m_buttonMenu1.name) {
 			FungusManager.Instance.ExecuteBlock (block1);
@@ -84,11 +86,13 @@ public class ChatController : MonoBehaviour
 
 	public void ActivateOptions (string option1, string block1, string option2, string block2)
 	{
+		
 		m_buttonMenu1.SetActive (true);
 		m_buttonMenu2.SetActive (true);
 		m_buttonMenu1.GetComponent<MessageButton> ().Populate (option1);
 		m_buttonMenu2.GetComponent<MessageButton> ().Populate (option2);
 		this.block1 = block1;
 		this.block2 = block2;
+		GameObject.Find ("InputField").GetComponent<Button> ().interactable = true;
 	}
 }
