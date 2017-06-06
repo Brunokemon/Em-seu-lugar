@@ -84,6 +84,7 @@ public class ChatController : MonoBehaviour
 		layoutGroup.CalculateLayoutInputVertical ();
 	}
 
+	//Ativar todas as opcoes
 	public void ActivateOptions (string option1, string block1, string option2, string block2)
 	{
 		
@@ -93,6 +94,24 @@ public class ChatController : MonoBehaviour
 		m_buttonMenu2.GetComponent<MessageButton> ().Populate (option2);
 		this.block1 = block1;
 		this.block2 = block2;
+		GameObject.Find ("InputField").GetComponent<Button> ().interactable = true;
+	}
+
+	//Ativar opcao 1
+	public void ActivateOneOption (string option, string block)
+	{
+		m_buttonMenu1.SetActive (true);
+		m_buttonMenu1.GetComponent<MessageButton> ().Populate (option);
+		this.block1 = block;
+		GameObject.Find ("InputField").GetComponent<Button> ().interactable = true;
+	}
+
+	//Ativar opcao 2
+	public void ActivateTwoOption (string option, string block)
+	{
+		m_buttonMenu2.SetActive (true);
+		m_buttonMenu2.GetComponent<MessageButton> ().Populate (option);
+		this.block2 = block;
 		GameObject.Find ("InputField").GetComponent<Button> ().interactable = true;
 	}
 }
