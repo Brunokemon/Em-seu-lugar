@@ -17,13 +17,13 @@ public class MessageButton : MonoBehaviour
 
 	public void Populate (string p_message)
 	{
-		msgText.text = m_Message = p_message;
+		m_Message = p_message;
+		msgText.text = m_Message;
 	}
 
 	public void ClickHandler ()
 	{
-		if (m_Message == "")
-			m_Message = msgText.text;
+		m_Message = msgText.text;
 		ChatController.Instance.FillInputField (m_Message);
 		ChatController.Instance.p_chosenOption = this.name;
 	}
