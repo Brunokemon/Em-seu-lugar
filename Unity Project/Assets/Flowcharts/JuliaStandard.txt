@@ -7,16 +7,7 @@ Preciso de ajuda
 #SAY.Julia_Flowchart.3.Julia
 Por favor
 
-#MENU.Julia_Flowchart.6
-Aconteceu alguma coisa?
-
-#MENU.Julia_Flowchart.11
-O que foi?
-
-#SAY.Julia_Flowchart.18.Player
-O que aconteceu? Você está bem?
-
-#SAY.Julia_Flowchart.8.Julia
+#SAY.Julia_Flowchart.358.Julia
 Aconteceu sim, fiz uma burrada
 
 #SAY.Julia_Flowchart.23.Julia
@@ -31,16 +22,7 @@ Eu tentei falar com ele mas ele parecia possuido
 #SAY.Julia_Flowchart.26.Julia
 Jogou tudo no chão e continuou me xingando
 
-#MENU.Julia_Flowchart.22
-E daí?
-
-#MENU.Julia_Flowchart.30
-Você tá bem?!?!?!
-
-#SAY.Julia_Flowchart.20.Player
-Estou sim, o que foi?
-
-#SAY.Julia_Flowchart.10.Julia
+#SAY.Julia_Flowchart.359.Julia
 Queimei o jantar do zé
 
 #SAY.Julia_Flowchart.13.Julia
@@ -49,16 +31,7 @@ Ele ficou puto
 #SAY.Julia_Flowchart.14.Julia
 Jogou tudo no chao
 
-#MENU.Julia_Flowchart.31
-E daí?
-
-#MENU.Julia_Flowchart.32
-Você tá bem?!?!?!
-
-#SAY.Julia_Flowchart.34.Player
-Você está bem?
-
-#SAY.Julia_Flowchart.37.Julia
+#SAY.Julia_Flowchart.360.Julia
 Tou sim
 
 #SAY.Julia_Flowchart.44.Julia
@@ -76,16 +49,7 @@ Ele tá gritando que nem um louco lá fora
 #SAY.Julia_Flowchart.40.Julia
 Eu só quero sair daqui para ir no hospital...
 
-#MENU.Julia_Flowchart.52
-Por que ir no hospital?
-
-#MENU.Julia_Flowchart.53
-Ele te machucou, Júlia?!?!
-
-#SAY.Julia_Flowchart.35.Player
-E daí?
-
-#SAY.Julia_Flowchart.45.Julia
+#SAY.Julia_Flowchart.361.Julia
 Eu me tranquei no banheiro. Não sei mais o que fazer.
 
 #SAY.Julia_Flowchart.46.Julia
@@ -94,26 +58,8 @@ Ele tá gritando que nem um louco lá fora
 #SAY.Julia_Flowchart.47.Julia
 Eu só quero sair daqui para ir no hospital...
 
-#MENU.Julia_Flowchart.48
-Por que ir no hospital?
-
-#MENU.Julia_Flowchart.49
-Ele te machucou, Júlia?!?!
-
-#SAY.Julia_Flowchart.55.Player
-Por que ir no hospital?
-
 #SAY.Julia_Flowchart.57.Julia
 Eu tou sangrando, amiga. Estou preocupada com o bebê. Não é um bom sinal, né?
-
-#MENU.Julia_Flowchart.59
-Você tentou falar com ele?
-
-#MENU.Julia_Flowchart.60
-Não mesmo! E o bebê?
-
-#SAY.Julia_Flowchart.56.Player
-Ele te machucou, Júlia?!?!
 
 #SAY.Julia_Flowchart.65.Julia
 Não, miga.
@@ -124,15 +70,6 @@ Não dessa vez.
 #SAY.Julia_Flowchart.67.Julia
 Eu tou sangrando, amiga. Estou preocupada com o bebê. Não é um bom sinal, né?
 
-#MENU.Julia_Flowchart.68
-Não é mesmo!
-
-#MENU.Julia_Flowchart.69
-Você tem que sair daí, agora
-
-#SAY.Julia_Flowchart.71.Player
-Não mesmo! E o bebê?
-
 #SAY.Julia_Flowchart.75.Julia
 Eu não sei...
 
@@ -141,15 +78,6 @@ Estou preocupada...
 
 #SAY.Julia_Flowchart.76.Julia
 Começou a sangrar há uma meia hora e eu achei que não era nada, mas tá continuando...
-
-#MENU.Julia_Flowchart.74
-Você tem que sair daí
-
-#MENU.Julia_Flowchart.78
-Você tentou falar com ele?
-
-#SAY.Julia_Flowchart.80.Player
-Você tem que sair daí, agora
 
 #SAY.Julia_Flowchart.85.Julia
 Como, com esse homem transtornado desse jeito?
@@ -163,15 +91,6 @@ E fica voltando aqui gritando na porta
 #SAY.Julia_Flowchart.83.Julia
 Eu tou com medo
 
-#MENU.Julia_Flowchart.82
-Você já tentou falar com ele?
-
-#MENU.Julia_Flowchart.86
-E chamar a polícia?
-
-#SAY.Julia_Flowchart.87.Player
-E chamar a polícia?
-
 #SAY.Julia_Flowchart.91.Julia
 Aí que o Zé vai me matar mesmo!
 
@@ -180,15 +99,6 @@ E sério, amiga.
 
 #SAY.Julia_Flowchart.90.Julia
 A culpa é toda minha.
-
-#MENU.Julia_Flowchart.89
-Como isso é culpa sua?
-
-#MENU.Julia_Flowchart.136
-Você tem que sair dessa
-
-#SAY.Julia_Flowchart.100.Player
-Você já tentou falar com ele?
 
 #SAY.Julia_Flowchart.101.Julia
 Falar o quê, amiga?
@@ -205,15 +115,6 @@ E fica voltando aqui gritando na porta, mandando eu sair
 #SAY.Julia_Flowchart.134.Julia
 eu tenho que sair mesmo, pra ir no hospital, mas sair como com ele assim?
 
-#MENU.Julia_Flowchart.102
-E chamar a polícia?
-
-#MENU.Julia_Flowchart.135
-E chamar uma ambulância?
-
-#SAY.Julia_Flowchart.103.Player
-E chamar uma ambulância, para levar você para o hospital?
-
 #SAY.Julia_Flowchart.104.Julia
 Seria bom, né? Daí eu iria direto pro hospital pra ver como tá o bebê.
 
@@ -225,15 +126,6 @@ O Zé vai ver a ambulancia chegando e vai ficar maluco
 
 #SAY.Julia_Flowchart.139.Julia
 Eu nunca mais vou conseguir sair daqui...
-
-#MENU.Julia_Flowchart.140
-Você tem que sair daí
-
-#MENU.Julia_Flowchart.105
-Chama a ambulancia mesmo assim
-
-#SAY.Julia_Flowchart.106.Player
-Como isso é culpa sua?
 
 #SAY.Julia_Flowchart.107.Julia
 Ah, você sabe
@@ -249,15 +141,6 @@ E a gente não tá tão bem economicamente para ficar jogando comida fora
 
 #SAY.Julia_Flowchart.163.Julia
 Eu devia tomar mais cuidado, ainda mais com o Zé doente assim
-
-#MENU.Julia_Flowchart.108
-O Zé tá doente?
-
-#MENU.Julia_Flowchart.164
-Isso não é culpa sua
-
-#SAY.Julia_Flowchart.109.Player
-Você tem que sair daí.
 
 #SAY.Julia_Flowchart.142.Player
 Agora.
@@ -276,21 +159,6 @@ E com esse cão de guarda na porta quebrando tudo, não tem como destrancar a po
 
 #SAY.Julia_Flowchart.146.Julia
 E mesmo que eu conseguisse sair daqui, o que eu ia fazer?
-
-#MENU.Julia_Flowchart.204
-Ele ainda tá na porta?
-
-#MENU.Julia_Flowchart.205
-Ele sempre foi assim?
-
-#MENU.Julia_Flowchart.111
-Ele ainda tá na porta?
-
-#MENU.Julia_Flowchart.200
-Isso não é culpa sua
-
-#SAY.Julia_Flowchart.112.Player
-O Zé tá doente?
 
 #SAY.Julia_Flowchart.113.Julia
 Faz uns meses que ele tá agindo diferente
@@ -313,27 +181,6 @@ eu nem sei como ele fala essas coisas, me faz sentir assim tão triste
 #SAY.Julia_Flowchart.213.Julia
 e no final eu sempre perdôo ele
 
-#MENU.Julia_Flowchart.215
-Quer falar sobre isso?
-
-#MENU.Julia_Flowchart.114
-Chama uma ambulancia
-
-#MENU.Julia_Flowchart.219
-Você ainda está sangrando?
-
-#MENU.Julia_Flowchart.222
-Chama uma ambulancia
-
-#MENU.Julia_Flowchart.224
-Você ainda está sangrando?
-
-#MENU.Julia_Flowchart.214
-E ficou melhor?
-
-#SAY.Julia_Flowchart.115.Player
-E ficou melhor?
-
 #SAY.Julia_Flowchart.266.Julia
 ficou um pouco, por alguns dias
 
@@ -346,29 +193,8 @@ eu não posso sair, não posso trabalhar, sou burra e faço tudo errado
 #SAY.Julia_Flowchart.269.Julia
 eu nem sei como ele fala essas coisas, me faz sentir assim tão triste
 
-#MENU.Julia_Flowchart.117
-Quer falar sobre isso?
-
-#MENU.Julia_Flowchart.252
-Já falou isso com alguém?
-
-#MENU.Julia_Flowchart.271
-Chama a ambulancia
-
-#SAY.Julia_Flowchart.118.Player
-Quer falar sobre isso?
-
 #SAY.Julia_Flowchart.119.Julia
 Falar o que? É normal isso, não é mesmo?
-
-#MENU.Julia_Flowchart.120
-Não!
-
-#MENU.Julia_Flowchart.239
-NÃO
-
-#SAY.Julia_Flowchart.121.Player
-Você ainda está sangrando?
 
 #SAY.Julia_Flowchart.122.Julia
 Eu nem sei mais
@@ -391,15 +217,6 @@ deixa eu ver
 #SAY.Julia_Flowchart.237.Julia
 acho que sim
 
-#MENU.Julia_Flowchart.123
-Você já tentou falar com ele?
-
-#MENU.Julia_Flowchart.248
-Será que a ambulancia tá chegando?
-
-#MENU.Julia_Flowchart.265
-Chama a ambulancia
-
 #SAY.Julia_Flowchart.124.Player
 Não é normal não!
 
@@ -408,15 +225,6 @@ Mas não é assim que casais são?
 
 #SAY.Julia_Flowchart.240.Julia
 Ele me ama, só está estressado com o trabalho
-
-#MENU.Julia_Flowchart.126
-Não é bem assim
-
-#MENU.Julia_Flowchart.243
-Já falou isso com alguém?
-
-#MENU.Julia_Flowchart.246
-Já falou isso com alguém?
 
 #SAY.Julia_Flowchart.149.Player
 Quando ela chegar você vê o que faz com o Zé
@@ -436,15 +244,6 @@ Quando a ambulância chegar ele vai ver o quão periogosa é a minha situação 
 #SAY.Julia_Flowchart.157.Julia
 Já chamei, obrigada miga
 
-#MENU.Julia_Flowchart.151
-O Zé tá doente?
-
-#MENU.Julia_Flowchart.158
-Quando chega a ambulancia?
-
-#SAY.Julia_Flowchart.165.Player
-Isso não é culpa sua
-
 #SAY.Julia_Flowchart.166.Julia
 É sim, tipo...
 
@@ -460,15 +259,6 @@ E gritando umas coisas
 #SAY.Julia_Flowchart.183.Julia
 Eu acho que ele tá tentando entrar!!!!!!!
 
-#MENU.Julia_Flowchart.167
-Chama a polícia
-
-#MENU.Julia_Flowchart.192
-Chama os vizinhos
-
-#SAY.Julia_Flowchart.255.Player
-Não é bem assim
-
 #SAY.Julia_Flowchart.256.Julia
 Pode não ser...
 
@@ -480,12 +270,6 @@ Não tou me sentindo muito bem...
 
 #SAY.Julia_Flowchart.272.Player
 ...
-
-#MENU.Julia_Flowchart.257
-Julia???
-
-#MENU.Julia_Flowchart.275
-Tudo bem aí?
 
 #SAY.Julia_Flowchart.169.Player
 Chama a polícia, liga para seus vizinhos!
@@ -511,15 +295,6 @@ Ai meu deus, acho que ele vai derrubar tudo!!
 #SAY.Julia_Flowchart.198.Julia
 Uê, parou?
 
-#MENU.Julia_Flowchart.171
-Já ligou?
-
-#MENU.Julia_Flowchart.199
-Tenta falar com ele
-
-#SAY.Julia_Flowchart.173.Player
-Quando chega a ambulancia?
-
 #SAY.Julia_Flowchart.174.Julia
 eles disseram 5 a dez minutos
 
@@ -529,23 +304,11 @@ pareceram preocupados
 #SAY.Julia_Flowchart.231.Julia
 será que é tão sério assim?
 
-#MENU.Julia_Flowchart.175
-Você ainda está sangrando?
-
-#MENU.Julia_Flowchart.241
-Você ainda está sangrando?
-
-#SAY.Julia_Flowchart.177.Player
-Já ligou?
-
 #SAY.Julia_Flowchart.178.Julia
 Aqui é o Zé. A Júlia não quer mais falar com você. Nunca mais.
 
-#MENU.Julia_Flowchart.179
-...
-
 #SAY.Julia_Flowchart.185.Player
-Você acabou de estemunhar apenas alguns minutos na vida de uma pessoa em um relacionamento abusivo.
+Você acabou de testemunhar apenas alguns minutos na vida de uma pessoa em um relacionamento abusivo.
 
 #SAY.Julia_Flowchart.188.Player
 Estima-se que duas a cada três mulheres irá passar por um relacionamento assim em algum período da sua vida.
@@ -558,12 +321,6 @@ Olhe ao seu redor, pessoas que você conhece podem estar em um relacionamento ab
 
 #SAY.Julia_Flowchart.191.Player
 Preste atenção e ofereça ajuda.
-
-#MENU.Julia_Flowchart.187
-Começar de novo
-
-#SAY.Julia_Flowchart.227.Player
-watevs
 
 #SAY.Julia_Flowchart.228.Julia
 miga, estou ouvindo sirenes! Acho que é a ambulancia!
@@ -586,429 +343,606 @@ será que eu saio?
 #SAY.Julia_Flowchart.263.Julia
 Miga, parece que a ambulancia está indo embora! E eu tou sangrando mais ainda!
 
+#SAY.Julia_Flowchart.124.
+Não é normal não!
+
+#SAY.Julia_Flowchart.110.
+Você pensa que já não tentei?
+
+#SAY.Julia_Flowchart.149.
+Quando ela chegar você vê o que faz com o Zé
+
+#SAY.Julia_Flowchart.152.
+Chama a ambulância, não importa
+
+#SAY.Julia_Flowchart.174.
+eles disseram 5 a dez minutos
+
+#SAY.Julia_Flowchart.76.
+Começou a sangrar há uma meia hora e eu achei que não era nada, mas tá continuando...
+
+#MENU.Julia_Flowchart.48
+Por que ir no hospital?
+
+#SAY.Julia_Flowchart.161.
+Queimei o jantar, vai ter que jogar tudo fora
+
+#SAY.Julia_Flowchart.235.
+obrigada por me ouvir
+
+#SAY.Julia_Flowchart.46.
+Ele tá gritando que nem um louco lá fora
+
+#MENU.Julia_Flowchart.239
+NÃO
+
+#SAY.Julia_Flowchart.113.
+Faz uns meses que ele tá agindo diferente
+
+#SAY.Julia_Flowchart.103.
+E chamar uma ambulância, para levar você para o hospital?
+
+#SAY.Julia_Flowchart.81.
+Ele tá derrubando a casa toda
+
+#SAY.Julia_Flowchart.121.
+Você ainda está sangrando?
+
+#SAY.Julia_Flowchart.237.
+acho que sim
+
+#MENU.Julia_Flowchart.6
+Aconteceu alguma coisa?
+
+#SAY.Julia_Flowchart.24.
+Eu nunca vi ele assim
+
+#SAY.Julia_Flowchart.100.
+Você já tentou falar com ele?
+
+#SAY.Julia_Flowchart.210.
+mas daí tudo ficou igual
+
+#SAY.Julia_Flowchart.57.
+Eu tou sangrando, amiga. Estou preocupada com o bebê. Não é um bom sinal, né?
+
+#SAY.Julia_Flowchart.75.
+Eu não sei...
+
+#SAY.Julia_Flowchart.181.
+...
+
+#SAY.Julia_Flowchart.230.
+pareceram preocupados
+
+#SAY.Julia_Flowchart.188.
+Estima-se que duas a cada três mulheres irá passar por um relacionamento assim em algum período da sua vida.
+
+#SAY.Julia_Flowchart.34.
+Você está bem?
+
+#SAY.Julia_Flowchart.173.
+Quando chega a ambulancia?
+
+#SAY.Julia_Flowchart.18.
+O que aconteceu? Você está bem?
+
+#SAY.Julia_Flowchart.240.
+Ele me ama, só está estressado com o trabalho
+
+#SAY.Julia_Flowchart.169.
+Chama a polícia, liga para seus vizinhos!
+
+#MENU.Julia_Flowchart.175
+Você ainda está sangrando?
+
+#SAY.Julia_Flowchart.104.
+Seria bom, né? Daí eu iria direto pro hospital pra ver como tá o bebê.
+
+#MENU.Julia_Flowchart.74
+Você tem que sair daí
+
+#SAY.Julia_Flowchart.178.
+Aqui é o Zé. A Júlia não quer mais falar com você. Nunca mais.
+
+#SAY.Julia_Flowchart.255.
+Não é bem assim
+
+#MENU.Julia_Flowchart.111
+Ele ainda tá na porta?
+
+#MENU.Julia_Flowchart.151
+O Zé tá doente?
+
+#SAY.Julia_Flowchart.112.
+O Zé tá doente?
+
+#SAY.Julia_Flowchart.55.
+Por que ir no hospital?
+
+#SAY.Julia_Flowchart.211.
+eu não posso sair, não posso trabalhar, sou burra e faço tudo errado
+
+#MENU.Julia_Flowchart.199
+Tenta falar com ele
+
+#MENU.Julia_Flowchart.102
+E chamar a polícia?
+
+#MENU.Julia_Flowchart.136
+Você tem que sair dessa
+
+#SAY.Julia_Flowchart.198.
+Uê, parou?
+
+#SAY.Julia_Flowchart.150.
+Você tem razão, vou chamar
+
 #MENU.Julia_Flowchart.229
 Aguenta firme!
 
+#SAY.Julia_Flowchart.166.
+É sim, tipo...
+
+#MENU.Julia_Flowchart.53
+Ele te machucou, Júlia?!?!
+
+#SAY.Julia_Flowchart.182.
+E gritando umas coisas
+
+#MENU.Julia_Flowchart.86
+E chamar a polícia?
+
+#SAY.Julia_Flowchart.139.
+Eu nunca mais vou conseguir sair daqui...
+
+#MENU.Julia_Flowchart.248
+Será que a ambulancia tá chegando?
+
+#MENU.Julia_Flowchart.224
+Você ainda está sangrando?
+
+#MENU.Julia_Flowchart.32
+Você tá bem?!?!?!
+
+#MENU.Julia_Flowchart.117
+Quer falar sobre isso?
+
+#SAY.Julia_Flowchart.183.
+Eu acho que ele tá tentando entrar!!!!!!!
+
+#SAY.Julia_Flowchart.261.
+será com os paramedicos?
+
+#SAY.Julia_Flowchart.160.
+E a gente não tá tão bem economicamente para ficar jogando comida fora
+
+#MENU.Julia_Flowchart.200
+Isso não é culpa sua
+
+#MENU.Julia_Flowchart.82
+Você já tentou falar com ele?
+
+#SAY.Julia_Flowchart.191.
+Preste atenção e ofereça ajuda.
+
+#SAY.Julia_Flowchart.87.
+E chamar a polícia?
+
+#SAY.Julia_Flowchart.40.
+Eu só quero sair daqui para ir no hospital...
+
+#SAY.Julia_Flowchart.162.
+Eu faço tudo errado
+
 #MENU.Julia_Flowchart.264
 Liga de novo
+
+#SAY.Julia_Flowchart.118.
+Quer falar sobre isso?
+
+#MENU.Julia_Flowchart.126
+Não é bem assim
+
+#SAY.Julia_Flowchart.47.
+Eu só quero sair daqui para ir no hospital...
+
+#SAY.Julia_Flowchart.45.
+Eu me tranquei no banheiro. Não sei mais o que fazer.
+
+#SAY.Julia_Flowchart.212.
+eu nem sei como ele fala essas coisas, me faz sentir assim tão triste
+
+#SAY.Julia_Flowchart.233.
+acabei me distraindo falando com você
+
+#SAY.Julia_Flowchart.143.
+Não importa como.
+
+#MENU.Julia_Flowchart.158
+Quando chega a ambulancia?
+
+#MENU.Julia_Flowchart.52
+Por que ir no hospital?
+
+#MENU.Julia_Flowchart.69
+Você tem que sair daí, agora
+
+#MENU.Julia_Flowchart.179
+...
+
+#SAY.Julia_Flowchart.163.
+Eu devia tomar mais cuidado, ainda mais com o Zé doente assim
+
+#MENU.Julia_Flowchart.257
+Julia???
+
+#MENU.Julia_Flowchart.68
+Não é mesmo!
+
+#SAY.Julia_Flowchart.83.
+Eu tou com medo
+
+#MENU.Julia_Flowchart.171
+Já ligou?
+
+#SAY.Julia_Flowchart.20.
+Estou sim, o que foi?
+
+#SAY.Julia_Flowchart.25.
+Eu tentei falar com ele mas ele parecia possuido
+
+#SAY.Julia_Flowchart.115.
+E ficou melhor?
+
+#SAY.Julia_Flowchart.269.
+eu nem sei como ele fala essas coisas, me faz sentir assim tão triste
+
+#SAY.Julia_Flowchart.119.
+Falar o que? É normal isso, não é mesmo?
+
+#SAY.Julia_Flowchart.259.
+O Zé parou de gritar, acho
+
+#SAY.Julia_Flowchart.56.
+Ele te machucou, Júlia?!?!
+
+#MENU.Julia_Flowchart.271
+Chama a ambulancia
+
+#SAY.Julia_Flowchart.266.
+ficou um pouco, por alguns dias
+
+#SAY.Julia_Flowchart.43.
+Nem sei mais
+
+#SAY.Julia_Flowchart.132.
+Parece que tá possuído, tá derrubando a casa toda
+
+#SAY.Julia_Flowchart.228.
+miga, estou ouvindo sirenes! Acho que é a ambulancia!
+
+#SAY.Julia_Flowchart.23.
+Hoje eu queimei o jantar do Zé, ele ficou furioso
+
+#SAY.Julia_Flowchart.3.
+Por favor
+
+#SAY.Julia_Flowchart.133.
+Quando ele fica desse jeito, não tem conversa não
+
+#MENU.Julia_Flowchart.89
+Como isso é culpa sua?
+
+#SAY.Julia_Flowchart.10.
+Queimei o jantar do zé
+
+#SAY.Julia_Flowchart.13.
+Ele ficou puto
+
+#SAY.Julia_Flowchart.109.
+Você tem que sair daí.
+
+#SAY.Julia_Flowchart.125.
+Mas não é assim que casais são?
+
+#SAY.Julia_Flowchart.180.
+amiga, ele tá batendo na porta
+
+#SAY.Julia_Flowchart.106.
+Como isso é culpa sua?
+
+#MENU.Julia_Flowchart.214
+E ficou melhor?
+
+#MENU.Julia_Flowchart.135
+E chamar uma ambulância?
+
+#SAY.Julia_Flowchart.85.
+Como, com esse homem transtornado desse jeito?
+
+#SAY.Julia_Flowchart.90.
+A culpa é toda minha.
+
+#SAY.Julia_Flowchart.84.
+E fica voltando aqui gritando na porta
+
+#MENU.Julia_Flowchart.78
+Você tentou falar com ele?
+
+#SAY.Julia_Flowchart.91.
+Aí que o Zé vai me matar mesmo!
+
+#SAY.Julia_Flowchart.77.
+Estou preocupada...
+
+#MENU.Julia_Flowchart.164
+Isso não é culpa sua
+
+#SAY.Julia_Flowchart.256.
+Pode não ser...
+
+#MENU.Julia_Flowchart.105
+Chama a ambulancia mesmo assim
+
+#MENU.Julia_Flowchart.140
+Você tem que sair daí
+
+#MENU.Julia_Flowchart.192
+Chama os vizinhos
+
+#MENU.Julia_Flowchart.252
+Já falou isso com alguém?
+
+#SAY.Julia_Flowchart.156.
+Quando a ambulância chegar ele vai ver o quão periogosa é a minha situação e vai entender
+
+#MENU.Julia_Flowchart.241
+Você ainda está sangrando?
+
+#SAY.Julia_Flowchart.42.
+Eu me tranquei no banheiro. Não sei mais o que fazer.
+
+#MENU.Julia_Flowchart.275
+Tudo bem aí?
+
+#SAY.Julia_Flowchart.153.
+Ele não está me ouvindo por que está doente
+
+#SAY.Julia_Flowchart.44.
+Eu acho...
+
+#SAY.Julia_Flowchart.67.
+Eu tou sangrando, amiga. Estou preocupada com o bebê. Não é um bom sinal, né?
+
+#SAY.Julia_Flowchart.268.
+eu não posso sair, não posso trabalhar, sou burra e faço tudo errado
+
+#SAY.Julia_Flowchart.213.
+e no final eu sempre perdôo ele
+
+#SAY.Julia_Flowchart.195.
+Ele nunca ficou desse jeito, eu juro!
+
+#MENU.Julia_Flowchart.31
+E daí?
+
+#SAY.Julia_Flowchart.273.
+Não tou me sentindo muito bem...
+
+#SAY.Julia_Flowchart.144.
+Com esse barrigão eu não passo pela janela
+
+#SAY.Julia_Flowchart.189.
+Assim como Júlia, a maioria delas não reconhece que está em um relacionamento abusivo ou não sabe como sair dele.
+
+#MENU.Julia_Flowchart.60
+Não mesmo! E o bebê?
+
+#SAY.Julia_Flowchart.190.
+Olhe ao seu redor, pessoas que você conhece podem estar em um relacionamento abusivo nesse exato momento e nem se darem conta!
+
+#MENU.Julia_Flowchart.205
+Ele sempre foi assim?
+
+#MENU.Julia_Flowchart.123
+Você já tentou falar com ele?
+
+#SAY.Julia_Flowchart.207.
+e ficou mesmo, por alguns dias
+
+#SAY.Julia_Flowchart.193.
+O barulho, tá mais forte! Parece que ele tá derrubando a casa!
+
+#MENU.Julia_Flowchart.215
+Quer falar sobre isso?
+
+#SAY.Julia_Flowchart.2.
+Preciso de ajuda
+
+#SAY.Julia_Flowchart.138.
+Mas miga, não vai funcionar
+
+#SAY.Julia_Flowchart.107.
+Ah, você sabe
+
+#MENU.Julia_Flowchart.30
+Você tá bem?!?!?!
+
+#SAY.Julia_Flowchart.260.
+será que eu saio?
+
+#SAY.Julia_Flowchart.134.
+eu tenho que sair mesmo, pra ir no hospital, mas sair como com ele assim?
+
+#SAY.Julia_Flowchart.131.
+E fica voltando aqui gritando na porta, mandando eu sair
+
+#SAY.Julia_Flowchart.194.
+Ai meu deus, acho que ele vai derrubar tudo!!
+
+#SAY.Julia_Flowchart.197.
+...
+
+#SAY.Julia_Flowchart.41.
+Ele tá gritando que nem um louco lá fora
+
+#SAY.Julia_Flowchart.80.
+Você tem que sair daí, agora
+
+#SAY.Julia_Flowchart.88.
+E sério, amiga.
+
+#MENU.Julia_Flowchart.167
+Chama a polícia
+
+#MENU.Julia_Flowchart.11
+O que foi?
+
+#SAY.Julia_Flowchart.272.
+...
+
+#SAY.Julia_Flowchart.122.
+Eu nem sei mais
+
+#SAY.Julia_Flowchart.227.
+watevs
+
+#SAY.Julia_Flowchart.236.
+rs
+
+#SAY.Julia_Flowchart.262.
+...
+
+#SAY.Julia_Flowchart.1.
+Amiga, ta ai?
+
+#SAY.Julia_Flowchart.101.
+Falar o quê, amiga?
+
+#SAY.Julia_Flowchart.165.
+Isso não é culpa sua
+
+#MENU.Julia_Flowchart.222
+Chama uma ambulancia
+
+#MENU.Julia_Flowchart.59
+Você tentou falar com ele?
+
+#SAY.Julia_Flowchart.238.
+...
+
+#MENU.Julia_Flowchart.187
+Começar de novo
+
+#SAY.Julia_Flowchart.201.
+Daí fiquei grávida e ele disse que tudo ia ficar melhor agora
+
+#MENU.Julia_Flowchart.114
+Chama uma ambulancia
+
+#SAY.Julia_Flowchart.170.
+Estou ligando!!
+
+#MENU.Julia_Flowchart.246
+Já falou isso com alguém?
+
+#SAY.Julia_Flowchart.157.
+Já chamei, obrigada miga
+
+#MENU.Julia_Flowchart.22
+E daí?
+
+#MENU.Julia_Flowchart.219
+Você ainda está sangrando?
+
+#SAY.Julia_Flowchart.142.
+Agora.
+
+#SAY.Julia_Flowchart.66.
+Não dessa vez.
+
+#MENU.Julia_Flowchart.265
+Chama a ambulancia
+
+#SAY.Julia_Flowchart.14.
+Jogou tudo no chao
+
+#SAY.Julia_Flowchart.8.
+Aconteceu sim, fiz uma burrada
+
+#SAY.Julia_Flowchart.263.
+Miga, parece que a ambulancia está indo embora! E eu tou sangrando mais ainda!
+
+#MENU.Julia_Flowchart.243
+Já falou isso com alguém?
+
+#MENU.Julia_Flowchart.204
+Ele ainda tá na porta?
+
+#SAY.Julia_Flowchart.146.
+E mesmo que eu conseguisse sair daqui, o que eu ia fazer?
+
+#SAY.Julia_Flowchart.26.
+Jogou tudo no chão e continuou me xingando
+
+#SAY.Julia_Flowchart.137.
+O Zé vai ver a ambulancia chegando e vai ficar maluco
+
+#SAY.Julia_Flowchart.71.
+Não mesmo! E o bebê?
+
+#SAY.Julia_Flowchart.231.
+será que é tão sério assim?
+
+#SAY.Julia_Flowchart.234.
+deixa eu ver
+
+#SAY.Julia_Flowchart.177.
+Já ligou?
+
+#MENU.Julia_Flowchart.49
+Ele te machucou, Júlia?!?!
+
+#SAY.Julia_Flowchart.145.
+E com esse cão de guarda na porta quebrando tudo, não tem como destrancar a porta
+
+#SAY.Julia_Flowchart.185.
+Você acabou de estemunhar apenas alguns minutos na vida de uma pessoa em um relacionamento abusivo.
+
+#SAY.Julia_Flowchart.267.
+mas daí tudo ficou igual
+
+#MENU.Julia_Flowchart.120
+Não!
+
+#SAY.Julia_Flowchart.35.
+E daí?
+
+#SAY.Julia_Flowchart.37.
+Tou sim
+
+#SAY.Julia_Flowchart.65.
+Não, miga.
+
+#SAY.Julia_Flowchart.258.
+parece que tá converçando lá na frente com alguém
+
+#SAY.Julia_Flowchart.274.
+Miga...
+
+#SAY.Julia_Flowchart.196.
+Ele sempre para depois de gritar um pouco, não sei o que aconteceu hoje...
+
+#MENU.Julia_Flowchart.108
+O Zé tá doente?
+
+#CHARACTER.Character Name
+Character Name
 
 #CHARACTER.Player
 Player
 
 #CHARACTER.Julia
 Julia
-
-#CHARACTER.Character Name
-Character Name
-
-#SAY.Julia_Flowchart.196.
-Ele sempre para depois de gritar um pouco, não sei o que aconteceu hoje...
-
-#SAY.Julia_Flowchart.274.
-Miga...
-
-#SAY.Julia_Flowchart.258.
-parece que tá converçando lá na frente com alguém
-
-#SAY.Julia_Flowchart.65.
-Não, miga.
-
-#SAY.Julia_Flowchart.37.
-Tou sim
-
-#SAY.Julia_Flowchart.35.
-E daí?
-
-#SAY.Julia_Flowchart.267.
-mas daí tudo ficou igual
-
-#SAY.Julia_Flowchart.185.
-Você acabou de estemunhar apenas alguns minutos na vida de uma pessoa em um relacionamento abusivo.
-
-#SAY.Julia_Flowchart.145.
-E com esse cão de guarda na porta quebrando tudo, não tem como destrancar a porta
-
-#SAY.Julia_Flowchart.177.
-Já ligou?
-
-#SAY.Julia_Flowchart.234.
-deixa eu ver
-
-#SAY.Julia_Flowchart.231.
-será que é tão sério assim?
-
-#SAY.Julia_Flowchart.71.
-Não mesmo! E o bebê?
-
-#SAY.Julia_Flowchart.137.
-O Zé vai ver a ambulancia chegando e vai ficar maluco
-
-#SAY.Julia_Flowchart.146.
-E mesmo que eu conseguisse sair daqui, o que eu ia fazer?
-
-#SAY.Julia_Flowchart.263.
-Miga, parece que a ambulancia está indo embora! E eu tou sangrando mais ainda!
-
-#SAY.Julia_Flowchart.66.
-Não dessa vez.
-
-#SAY.Julia_Flowchart.142.
-Agora.
-
-#SAY.Julia_Flowchart.157.
-Já chamei, obrigada miga
-
-#SAY.Julia_Flowchart.170.
-Estou ligando!!
-
-#SAY.Julia_Flowchart.201.
-Daí fiquei grávida e ele disse que tudo ia ficar melhor agora
-
-#SAY.Julia_Flowchart.238.
-...
-
-#SAY.Julia_Flowchart.165.
-Isso não é culpa sua
-
-#SAY.Julia_Flowchart.101.
-Falar o quê, amiga?
-
-#SAY.Julia_Flowchart.262.
-...
-
-#SAY.Julia_Flowchart.236.
-rs
-
-#SAY.Julia_Flowchart.227.
-watevs
-
-#SAY.Julia_Flowchart.122.
-Eu nem sei mais
-
-#SAY.Julia_Flowchart.272.
-...
-
-#SAY.Julia_Flowchart.88.
-E sério, amiga.
-
-#SAY.Julia_Flowchart.80.
-Você tem que sair daí, agora
-
-#SAY.Julia_Flowchart.41.
-Ele tá gritando que nem um louco lá fora
-
-#SAY.Julia_Flowchart.197.
-...
-
-#SAY.Julia_Flowchart.194.
-Ai meu deus, acho que ele vai derrubar tudo!!
-
-#SAY.Julia_Flowchart.131.
-E fica voltando aqui gritando na porta, mandando eu sair
-
-#SAY.Julia_Flowchart.134.
-eu tenho que sair mesmo, pra ir no hospital, mas sair como com ele assim?
-
-#SAY.Julia_Flowchart.260.
-será que eu saio?
-
-#SAY.Julia_Flowchart.107.
-Ah, você sabe
-
-#SAY.Julia_Flowchart.138.
-Mas miga, não vai funcionar
-
-#SAY.Julia_Flowchart.193.
-O barulho, tá mais forte! Parece que ele tá derrubando a casa!
-
-#SAY.Julia_Flowchart.207.
-e ficou mesmo, por alguns dias
-
-#SAY.Julia_Flowchart.190.
-Olhe ao seu redor, pessoas que você conhece podem estar em um relacionamento abusivo nesse exato momento e nem se darem conta!
-
-#SAY.Julia_Flowchart.189.
-Assim como Júlia, a maioria delas não reconhece que está em um relacionamento abusivo ou não sabe como sair dele.
-
-#SAY.Julia_Flowchart.144.
-Com esse barrigão eu não passo pela janela
-
-#SAY.Julia_Flowchart.273.
-Não tou me sentindo muito bem...
-
-#SAY.Julia_Flowchart.195.
-Ele nunca ficou desse jeito, eu juro!
-
-#SAY.Julia_Flowchart.213.
-e no final eu sempre perdôo ele
-
-#SAY.Julia_Flowchart.268.
-eu não posso sair, não posso trabalhar, sou burra e faço tudo errado
-
-#SAY.Julia_Flowchart.67.
-Eu tou sangrando, amiga. Estou preocupada com o bebê. Não é um bom sinal, né?
-
-#SAY.Julia_Flowchart.44.
-Eu acho...
-
-#SAY.Julia_Flowchart.153.
-Ele não está me ouvindo por que está doente
-
-#SAY.Julia_Flowchart.42.
-Eu me tranquei no banheiro. Não sei mais o que fazer.
-
-#SAY.Julia_Flowchart.156.
-Quando a ambulância chegar ele vai ver o quão periogosa é a minha situação e vai entender
-
-#SAY.Julia_Flowchart.256.
-Pode não ser...
-
-#SAY.Julia_Flowchart.77.
-Estou preocupada...
-
-#SAY.Julia_Flowchart.91.
-Aí que o Zé vai me matar mesmo!
-
-#SAY.Julia_Flowchart.84.
-E fica voltando aqui gritando na porta
-
-#SAY.Julia_Flowchart.90.
-A culpa é toda minha.
-
-#SAY.Julia_Flowchart.85.
-Como, com esse homem transtornado desse jeito?
-
-#SAY.Julia_Flowchart.106.
-Como isso é culpa sua?
-
-#SAY.Julia_Flowchart.180.
-amiga, ele tá batendo na porta
-
-#SAY.Julia_Flowchart.125.
-Mas não é assim que casais são?
-
-#SAY.Julia_Flowchart.109.
-Você tem que sair daí.
-
-#SAY.Julia_Flowchart.133.
-Quando ele fica desse jeito, não tem conversa não
-
-#SAY.Julia_Flowchart.228.
-miga, estou ouvindo sirenes! Acho que é a ambulancia!
-
-#SAY.Julia_Flowchart.132.
-Parece que tá possuído, tá derrubando a casa toda
-
-#SAY.Julia_Flowchart.43.
-Nem sei mais
-
-#SAY.Julia_Flowchart.266.
-ficou um pouco, por alguns dias
-
-#SAY.Julia_Flowchart.56.
-Ele te machucou, Júlia?!?!
-
-#SAY.Julia_Flowchart.259.
-O Zé parou de gritar, acho
-
-#SAY.Julia_Flowchart.119.
-Falar o que? É normal isso, não é mesmo?
-
-#SAY.Julia_Flowchart.269.
-eu nem sei como ele fala essas coisas, me faz sentir assim tão triste
-
-#SAY.Julia_Flowchart.115.
-E ficou melhor?
-
-#SAY.Julia_Flowchart.83.
-Eu tou com medo
-
-#SAY.Julia_Flowchart.163.
-Eu devia tomar mais cuidado, ainda mais com o Zé doente assim
-
-#SAY.Julia_Flowchart.143.
-Não importa como.
-
-#SAY.Julia_Flowchart.233.
-acabei me distraindo falando com você
-
-#SAY.Julia_Flowchart.212.
-eu nem sei como ele fala essas coisas, me faz sentir assim tão triste
-
-#SAY.Julia_Flowchart.45.
-Eu me tranquei no banheiro. Não sei mais o que fazer.
-
-#SAY.Julia_Flowchart.47.
-Eu só quero sair daqui para ir no hospital...
-
-#SAY.Julia_Flowchart.118.
-Quer falar sobre isso?
-
-#SAY.Julia_Flowchart.162.
-Eu faço tudo errado
-
-#SAY.Julia_Flowchart.40.
-Eu só quero sair daqui para ir no hospital...
-
-#SAY.Julia_Flowchart.87.
-E chamar a polícia?
-
-#SAY.Julia_Flowchart.191.
-Preste atenção e ofereça ajuda.
-
-#SAY.Julia_Flowchart.160.
-E a gente não tá tão bem economicamente para ficar jogando comida fora
-
-#SAY.Julia_Flowchart.261.
-será com os paramedicos?
-
-#SAY.Julia_Flowchart.183.
-Eu acho que ele tá tentando entrar!!!!!!!
-
-#SAY.Julia_Flowchart.139.
-Eu nunca mais vou conseguir sair daqui...
-
-#SAY.Julia_Flowchart.182.
-E gritando umas coisas
-
-#SAY.Julia_Flowchart.166.
-É sim, tipo...
-
-#SAY.Julia_Flowchart.150.
-Você tem razão, vou chamar
-
-#SAY.Julia_Flowchart.198.
-Uê, parou?
-
-#SAY.Julia_Flowchart.211.
-eu não posso sair, não posso trabalhar, sou burra e faço tudo errado
-
-#SAY.Julia_Flowchart.55.
-Por que ir no hospital?
-
-#SAY.Julia_Flowchart.112.
-O Zé tá doente?
-
-#SAY.Julia_Flowchart.255.
-Não é bem assim
-
-#SAY.Julia_Flowchart.178.
-Aqui é o Zé. A Júlia não quer mais falar com você. Nunca mais.
-
-#SAY.Julia_Flowchart.104.
-Seria bom, né? Daí eu iria direto pro hospital pra ver como tá o bebê.
-
-#SAY.Julia_Flowchart.169.
-Chama a polícia, liga para seus vizinhos!
-
-#SAY.Julia_Flowchart.240.
-Ele me ama, só está estressado com o trabalho
-
-#SAY.Julia_Flowchart.173.
-Quando chega a ambulancia?
-
-#SAY.Julia_Flowchart.34.
-Você está bem?
-
-#SAY.Julia_Flowchart.188.
-Estima-se que duas a cada três mulheres irá passar por um relacionamento assim em algum período da sua vida.
-
-#SAY.Julia_Flowchart.230.
-pareceram preocupados
-
-#SAY.Julia_Flowchart.181.
-...
-
-#SAY.Julia_Flowchart.75.
-Eu não sei...
-
-#SAY.Julia_Flowchart.57.
-Eu tou sangrando, amiga. Estou preocupada com o bebê. Não é um bom sinal, né?
-
-#SAY.Julia_Flowchart.210.
-mas daí tudo ficou igual
-
-#SAY.Julia_Flowchart.100.
-Você já tentou falar com ele?
-
-#SAY.Julia_Flowchart.237.
-acho que sim
-
-#SAY.Julia_Flowchart.121.
-Você ainda está sangrando?
-
-#SAY.Julia_Flowchart.81.
-Ele tá derrubando a casa toda
-
-#SAY.Julia_Flowchart.103.
-E chamar uma ambulância, para levar você para o hospital?
-
-#SAY.Julia_Flowchart.113.
-Faz uns meses que ele tá agindo diferente
-
-#SAY.Julia_Flowchart.46.
-Ele tá gritando que nem um louco lá fora
-
-#SAY.Julia_Flowchart.235.
-obrigada por me ouvir
-
-#SAY.Julia_Flowchart.161.
-Queimei o jantar, vai ter que jogar tudo fora
-
-#SAY.Julia_Flowchart.76.
-Começou a sangrar há uma meia hora e eu achei que não era nada, mas tá continuando...
-
-#SAY.Julia_Flowchart.174.
-eles disseram 5 a dez minutos
-
-#SAY.Julia_Flowchart.152.
-Chama a ambulância, não importa
-
-#SAY.Julia_Flowchart.149.
-Quando ela chegar você vê o que faz com o Zé
-
-#SAY.Julia_Flowchart.110.
-Você pensa que já não tentei?
-
-#SAY.Julia_Flowchart.124.
-Não é normal não!
-
-#SAY.Julia_Flowchart.26.
-Jogou tudo no chão e continuou me xingando
-
-#SAY.Julia_Flowchart.25.
-Eu tentei falar com ele mas ele parecia possuido
-
-#SAY.Julia_Flowchart.24.
-Eu nunca vi ele assim
-
-#SAY.Julia_Flowchart.23.
-Hoje eu queimei o jantar do Zé, ele ficou furioso
-
-#SAY.Julia_Flowchart.20.
-Estou sim, o que foi?
-
-#SAY.Julia_Flowchart.18.
-O que aconteceu? Você está bem?
-
-#SAY.Julia_Flowchart.14.
-Jogou tudo no chao
-
-#SAY.Julia_Flowchart.13.
-Ele ficou puto
-
-#SAY.Julia_Flowchart.10.
-Queimei o jantar do zé
-
-#SAY.Julia_Flowchart.8.
-Aconteceu sim, fiz uma burrada
-
-#SAY.Julia_Flowchart.3.
-Por favor
-
-#SAY.Julia_Flowchart.2.
-Preciso de ajuda
-
-#SAY.Julia_Flowchart.1.
-Amiga, ta ai?
 
